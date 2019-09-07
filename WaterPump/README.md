@@ -1,9 +1,9 @@
 # Waterpump
 
-This is a local server connected pump and water level sensor for topping off a fishtank at regular intervals. The float switch acts as a sensor - I've have unreliable results as float sensors get old so I want to have more control over whether a top off is needed. Also for this reason, the pump will shut off after 30 seconds, as a guarantee against server disconnection or accidental presses while the pump is on.
+This is a local server connected pump and water level sensor for topping off a fishtank at regular intervals. The float switch acts as a sensor - I've have unreliable results as float sensors get old so I want to have more control over whether a top off is needed. Also for this reason, the pump will shut off after 30 seconds, as a guarantee against server disconnection or accidental presses while the pump is on. You can adjust that timing in the code as needed.
 
 ## Parts list:
-- **[NodeMCU](https://amzn.to/2UdY5cX)** with the waterpump.ino loaded onto it, test by going to the ip address and making sure it's working as a server before hooking everything up
+- **[NodeMCU](https://amzn.to/2UdY5cX)** with the [waterpump.ino](https://github.com/sfgabe/OITProjects/blob/master/WaterPump/waterpump.ino) loaded onto it, test by going to the ip address and making sure it's working as a server before hooking everything up
 - **[12V mini water pump](https://amzn.to/2MJ3fws)** - this one is narrow and fits nicely in a plastic keg
 - **[vertical switch float](https://amzn.to/2Zu8xhv)**
 - **[2 LEDs](https://amzn.to/2PQMou5)**
