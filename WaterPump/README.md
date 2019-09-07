@@ -13,4 +13,11 @@ This is a local server connected pump and water level sensor for topping off an 
 - If you don't have one you'll need a [multimeter](https://amzn.to/2A0HnVe) to adjust the buck converter. You'll want the pump to be getting 12v and the NodeMCU board to be getting 5v-9v (it has on onboard regulator as long as you are using the VIN pin)
 - Some kind of enclosure, the linked-to parts fit snugly in [this 3d printed box](https://www.thingiverse.com/thing:3581474) but any project box will do.
 
+## Control:
+You can control this from the local network directly though a browser (go to the ip address assigned to it by your router), or with curl commands through HomeAssistant or similare systems:
+- on: curl -X POST http://esp_ipaddress/pump1on (this turns on for 30 seconds at a time)
+- off: curl -X POST http://esp_ipaddress/pump1off (this is just a failsafe in case the page reloads)
+- check_level: curl -X GET http://esp_ipaddress/checklevel (this is read as a response, Low or OK)
+
+## Wiring
 ![WaterPump Fritzing Diagram](https://github.com/sfgabe/OITProjects/blob/master/WaterPump/waterpump.png?raw=true)
