@@ -4,7 +4,7 @@ This is a local server connected pump and water level sensor for topping off a f
 
 ## Parts list:
 - **[NodeMCU](https://amzn.to/2UdY5cX)** with the [waterpump.ino](https://github.com/sfgabe/OITProjects/blob/master/WaterPump/waterpump.ino) loaded onto it, test by going to the ip address and making sure it's working as a server before hooking everything up
-- **[12V mini water pump](https://amzn.to/2MJ3fws)** - this one is narrow and fits nicely in a plastic keg
+- **[12V mini water pump](https://amzn.to/2MJ3fws)** - this one is narrow and fits nicely in a 5 gallon water cooler bottle
 - **[vertical switch float](https://amzn.to/2Zu8xhv)**
 - **[2 LEDs](https://amzn.to/2PQMou5)**
 - **[mini buck converter](https://amzn.to/2PQR9E4)** - this is not needed if you don't mind two separate plugs, one for the pump and one for the nodemcu
