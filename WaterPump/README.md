@@ -1,0 +1,11 @@
+This is a local server connected pump and water level sensor for topping off a fishtank at regular intervals. The float switch acts as a sensor - I've have unreliable results as float sensors get old so I want to have more control over whether a top off is needed. Also for this reason, the pump will shut off after 30 seconds, as a guarantee against server disconnection or accidental presses while the pump is on.
+
+Parts list:
+- [NodeMCU](https://amzn.to/2UdY5cX)
+- [12V mini water pump](https://amzn.to/2MJ3fws) - this one is narrow and firts nicely in a plastic keg
+- [vertical switch float](https://amzn.to/2Zu8xhv)
+- [mini buck converter](https://amzn.to/2PQR9E4) - this is not needed if you don't mind two separate plugs, one for the pump and one for the nodemcu
+- [12v power supply and barrel connector](https://amzn.to/2MX6NLP)
+- If you don't have one you'll need a [multimeter](https://amzn.to/2A0HnVe) to adjust the buck converter. You'll want the pump tober getting 12v and the NodeMCU board to be getting 5v-9v (it has on onboard regulator as long as you are using the VIN pin)
+
+![WaterPump Fritzing Diagram](https://github.com/sfgabe/OITProjects/blob/master/WaterPump/waterpump.png?raw=true)
