@@ -9,6 +9,7 @@ This is a local server connected pump and water level sensor for topping off an 
 - **[2 LEDs](https://amzn.to/2PQMou5)**
 - **[mini buck converter](https://amzn.to/2PQR9E4)** - this is not needed if you don't mind two separate plugs, one for the pump and one for the nodemcu
 - **[12v power supply and barrel connector](https://amzn.to/2MX6NLP)**
+- **[4mm tubing](https://amzn.to/2UEIqnl)** or larger one. If you're using the smaller tubing you'll need as step down connector like [this one on thingiverse](https://www.thingiverse.com/thing:3833100)
 - If you don't have one you'll need a [multimeter](https://amzn.to/2A0HnVe) to adjust the buck converter. You'll want the pump to be getting 12v and the NodeMCU board to be getting 5v-9v (it has on onboard regulator as long as you are using the VIN pin)
 - Some kind of enclosure, the linked-to parts fit snugly in [this 3d printed box](https://www.thingiverse.com/thing:3581474) but any project box will do.
 
