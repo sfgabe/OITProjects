@@ -1,3 +1,5 @@
+![WeatherCloud Gif](https://github.com/sfgabe/OITProjects/blob/master/WeatherCloud/weathercloud.gif?raw=true)
+
 # WeatherCloud for Home Assistant
 
 Simple hack for creating a cute weather notification cloud using Home Assistant's Dark Sky Sensor and MQTT
@@ -21,3 +23,8 @@ You may not need the extra ground connection, but if you experience flickering o
 You'll need to carefully pry open the lightbox with a knife or plastic spudger and take out the existing LEDs which are probably just taped to the back (these are just white and won't work for this project, save them for something else). It may also have a battery connection and a switch, which I just removed. 
 
 Once you have an empty box you can just stick your LEDs and NodeMCU in there and run the USB cord through where the switch used to be. You may have to experiment with placement so you dont get weird shadows from the wiring.
+
+## Alerts
+Here's some of the presets, the rest is up to you!
+
+![WeatherCloud Samples](https://github.com/sfgabe/OITProjects/blob/master/WeatherCloud/weathercloud.jpg?raw=true)
