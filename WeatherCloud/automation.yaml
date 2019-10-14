@@ -1,21 +1,15 @@
 # THIS GOES IN AUTOMATIONS.YAML
 # I AM USING THE DARKSKY WEATHER SENSOR WITH FORECAST_HOURLY TO SHOW WHAT TO EXPECT WHEN I GO OUT, ADJUST AS NEEDED FOR YOUR SETUP
 # https://www.home-assistant.io/integrations/darksky/
-# PEOPLE_HOME SENSOR JUST MEANS IT DOESNT TUN ON IF NO ONE IS THERE TO SEE IT, ADJUST AS NEEDED FOR YOUR SETUP
 
 - alias: Thundercloud Sunny
   trigger:
     platform: time_pattern
     minutes: "/5"
   condition:
-    condition: and
-    conditions:
-      - condition: state
-        entity_id: sensor.dark_sky_icon_0h
-        state: 'clear-day'
-      - condition: state
-        entity_id: binary_sensor.people_home
-        state: 'on'
+    - condition: state
+      entity_id: sensor.dark_sky_icon_0h
+      state: 'clear-day'
   action:
     - service: light.turn_on
       entity_id: light.thundercloud
@@ -29,14 +23,9 @@
     platform: time_pattern
     minutes: "/5"
   condition:
-    condition: and
-    conditions:
-      - condition: state
-        entity_id: sensor.dark_sky_icon_0h
-        state: 'clear-night'
-      - condition: state
-        entity_id: binary_sensor.people_home
-        state: 'on'
+    - condition: state
+      entity_id: sensor.dark_sky_icon_0h
+      state: 'clear-night'
   action:
     - service: light.turn_on
       entity_id: light.thundercloud
@@ -50,14 +39,9 @@
     platform: time_pattern
     minutes: "/5"
   condition:
-    condition: and
-    conditions:
-      - condition: state
-        entity_id: sensor.dark_sky_icon_0h
-        state: 'cloudy'
-      - condition: state
-        entity_id: binary_sensor.people_home
-        state: 'on'
+    - condition: state
+      entity_id: sensor.dark_sky_icon_0h
+      state: 'cloudy'
   action:
     - service: light.turn_on
       entity_id: light.thundercloud
@@ -71,14 +55,9 @@
     platform: time_pattern
     minutes: "/5"
   condition:
-    condition: and
-    conditions:
-      - condition: state
-        entity_id: sensor.dark_sky_icon_0h
-        state: 'fog'
-      - condition: state
-        entity_id: binary_sensor.people_home
-        state: 'on'
+    - condition: state
+      entity_id: sensor.dark_sky_icon_0h
+      state: 'fog'
   action:
     - service: light.turn_on
       entity_id: light.thundercloud
@@ -92,14 +71,9 @@
     platform: time_pattern
     minutes: "/5"
   condition:
-    condition: and
-    conditions:
-      - condition: state
-        entity_id: sensor.dark_sky_icon_0h
-        state: 'partly-cloudy-day'
-      - condition: state
-        entity_id: binary_sensor.people_home
-        state: 'on'
+    - condition: state
+      entity_id: sensor.dark_sky_icon_0h
+      state: 'partly-cloudy-day'
   action:
     - service: light.turn_on
       entity_id: light.thundercloud
@@ -113,14 +87,9 @@
     platform: time_pattern
     minutes: "/5"
   condition:
-    condition: and
-    conditions:
-      - condition: state
-        entity_id: sensor.dark_sky_icon_0h
-        state: 'partly-cloudy-night'
-      - condition: state
-        entity_id: binary_sensor.people_home
-        state: 'on'
+    - condition: state
+      entity_id: sensor.dark_sky_icon_0h
+      state: 'partly-cloudy-night'
   action:
     - service: light.turn_on
       entity_id: light.thundercloud
@@ -134,14 +103,9 @@
     platform: time_pattern
     minutes: "/5"
   condition:
-    condition: and
-    conditions:
-      - condition: state
-        entity_id: sensor.dark_sky_icon_0h
-        state: 'rain'
-      - condition: state
-        entity_id: binary_sensor.people_home
-        state: 'on'
+    - condition: state
+      entity_id: sensor.dark_sky_icon_0h
+      state: 'rain'
   action:
     - service: light.turn_on
       entity_id: light.thundercloud
@@ -155,14 +119,9 @@
     platform: time_pattern
     minutes: "/5"
   condition:
-    condition: and
-    conditions:
-      - condition: state
-        entity_id: sensor.dark_sky_icon_0h
-        state: 'snow'
-      - condition: state
-        entity_id: binary_sensor.people_home
-        state: 'on'
+    - condition: state
+      entity_id: sensor.dark_sky_icon_0h
+      state: 'snow'
   action:
     - service: light.turn_on
       entity_id: light.thundercloud
@@ -176,14 +135,9 @@
     platform: time_pattern
     minutes: "/5"
   condition:
-    condition: and
-    conditions:
-      - condition: state
-        entity_id: sensor.dark_sky_icon_0h
-        state: 'sleet'
-      - condition: state
-        entity_id: binary_sensor.people_home
-        state: 'on'
+    - condition: state
+      entity_id: sensor.dark_sky_icon_0h
+      state: 'sleet'
   action:
     - service: light.turn_on
       entity_id: light.thundercloud
@@ -197,14 +151,9 @@
     platform: time_pattern
     minutes: "/5"
   condition:
-    condition: and
-    conditions:
-      - condition: state
-        entity_id: sensor.dark_sky_icon_0h
-        state: 'wind'
-      - condition: state
-        entity_id: binary_sensor.people_home
-        state: 'on'
+    - condition: state
+      entity_id: sensor.dark_sky_icon_0h
+      state: 'wind'
   action:
     - service: light.turn_on
       entity_id: light.thundercloud
@@ -218,14 +167,9 @@
     platform: time_pattern
     minutes: "/5"
   condition:
-    condition: and
-    conditions:
-      - condition: state
-        entity_id: sensor.dark_sky_icon_0h
-        state: 'thunderstorm'
-      - condition: state
-        entity_id: binary_sensor.people_home
-        state: 'on'
+    - condition: state
+      entity_id: sensor.dark_sky_icon_0h
+      state: 'thunderstorm'
   action:
     - service: light.turn_on
       entity_id: light.thundercloud
