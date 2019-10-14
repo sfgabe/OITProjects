@@ -1,0 +1,28 @@
+# THIS GOES IN LIGHT.YAML
+
+- platform: mqtt
+  schema: json
+  command_topic: "thundercloud/set"
+  state_topic: "thundercloud/current" 
+  name: "Thundercloud"
+  optimistic: true
+  retain: true
+  brightness: true
+  effect: true
+  rgb: true
+  effect_list:
+    - "solid"
+    - "rainbow"
+    - "rainbow with glitter"
+    - "candy cane"
+    - "bpm"
+    - "confetti"
+    - "noise"
+    - "ripple"
+    - "fire"
+    - "twinkle"
+    - "lightning"
+    - "dots"
+    - "glitter"
+    - "juggle"
+    - "police all"
