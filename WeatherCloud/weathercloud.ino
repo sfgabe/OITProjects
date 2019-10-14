@@ -1,5 +1,6 @@
-/* Works with NodeMCU but must download 5.12.0 version of ArduinoJSON library
- *  mostly stolen from here https://github.com/bruhautomation/ESP-MQTT-JSON-Digital-LEDs
+/* Works with NodeMCU
+ * May need to download 5.12.0 version of ArduinoJSON library
+ * Mostly borrowed from here https://github.com/bruhautomation/ESP-MQTT-JSON-Digital-LEDs
 */
 
 #include <ArduinoJson.h>
