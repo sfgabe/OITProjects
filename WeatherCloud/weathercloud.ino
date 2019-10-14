@@ -1,6 +1,11 @@
-/* Works with NodeMCU
- * May need to download 5.12.0 version of ArduinoJSON library
- * Mostly borrowed from here https://github.com/bruhautomation/ESP-MQTT-JSON-Digital-LEDs
+/* Mostly borrowed from here https://github.com/bruhautomation/ESP-MQTT-JSON-Digital-LEDs
+   with much thanks to bruhautomation
+ 
+ To use this code you will need the following dependancies by going to Sketch -> Include Libraries -> Manage Libraries
+      - FastLED 
+      - PubSubClient
+      - ArduinoJSON
+        To work with NodeMCU, you may need to download 5.12.0 version of ArduinoJSON library
 */
 
 #include <ArduinoJson.h>
