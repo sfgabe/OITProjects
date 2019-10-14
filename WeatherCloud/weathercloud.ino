@@ -25,8 +25,8 @@ const char* mqtt_password = "MQTT-PASSWORD";
 const int mqtt_port = MQTT-PORT;
 
 /**************************** FOR OTA **************************************************/
-#define SENSORNAME "thundercloud" //change this to whatever you want to call your device
-#define OTApassword "simple" //the password you will need to enter to upload remotely via the ArduinoIDE
+#define SENSORNAME "weathercloud" //change this to whatever you want to call your device
+#define OTApassword "OTAPASSWORD" //the password you will need to enter to upload remotely via the ArduinoIDE
 int OTAport = 8266;
 
 /************* MQTT TOPICS (change these topics as you wish)  **************************/
