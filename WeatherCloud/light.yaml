@@ -2,8 +2,8 @@
 
 - platform: mqtt
   schema: json
-  command_topic: "thundercloud/set"
-  state_topic: "thundercloud/current" 
+  command_topic: "weathercloud/set"
+  state_topic: "weathercloud/current" 
   name: "Thundercloud"
   optimistic: true
   retain: true
