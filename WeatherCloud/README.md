@@ -10,6 +10,7 @@ Simple hack for creating a cute weather notification cloud using Home Assistant'
 - Cloud Lightbox from Flying Tiger Store [I think it's the same as this one](https://amzn.to/32q3dha)
 - [Micro USB cord](https://amzn.to/32bolba)
 - HomeAssistant installation with [DarkSky Sensor](https://www.home-assistant.io/integrations/darksky/) and [MQTT](https://www.home-assistant.io/integrations/mqtt)
+- You'll need to do a little bit of soldering to connect the lights to the board, so you should have what you need to do that too
 
 ## Programming
 - Load the weathercloud.ino onto the NodeMCU with Arduino
