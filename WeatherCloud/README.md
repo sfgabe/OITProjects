@@ -26,7 +26,7 @@ You'll need to carefully open the lightbox. Depending on wich type you have you 
 Once you have an empty box you can just stick your LEDs and NodeMCU in there and run the USB cord through where the switch used to be. You may have to experiment with placement so you dont get weird shadows from the wiring.
 
 ## Alerts
-Add the bits of code to your automation.yaml and lights.yaml files, and edit as you see fit.
+Add the bits of code to your automation.yaml and light.yaml files, and edit as you see fit.
 Here are some of the presets I came up with, the rest is up to you!
 
 ![WeatherCloud Samples](https://github.com/sfgabe/OITProjects/blob/master/WeatherCloud/weathercloud.jpg?raw=true)
