@@ -3,8 +3,8 @@
 ## Options
 There are two main scripts - .ino and .py - both are constructed with basically the same circuit
 
-- **flux_capacitor.py** is a python script that can be used by a Raspberry Pi with a trigger of your choosing. It looks cool as a RetroPi enclosure with a pi Zero, can be activated with startup or the push of a button.  Initially, I set it up a RetroPie for some classic video games, but didn't want to take up shelf space.
-- **flux_capacitor.ino** is an Arduino script that uses MQTT to control the light, great for fun notifications via Home Assistant, etc.
+- **flux_capacitor.py** is a python script that can be used by a Raspberry Pi with a trigger of your choosing. It looks cool as a RetroPi enclosure with a pi Zero, can be activated with startup or the push of a button. I set it up a  [RetroPie](https://retropie.org.uk/) for some classic video games.
+- **flux_capacitor.ino** is an Arduino script that uses MQTT to control the light, great for fun notifications via [Home Assistant](https://www.home-assistant.io/)
 
 Video here: https://youtu.be/O8Gv1gEYWtU
 
@@ -18,8 +18,6 @@ Video here: https://youtu.be/O8Gv1gEYWtU
 ### On Raspberry Pi
 
 ![Pi Zero Fritzing](https://github.com/sfgabe/OITProjects/blob/master/FluxCapacitor/Images/40b634577ea5f081fd2842161f3c59b6_preview_featured.jpg)
-
-- Everything you need to know about [RetroPie is here](https://retropie.org.uk/). I don't suggest using a PiZero for the more advanced games, but for 80s NES or Atari it works fine with no lag.
 - There are lots of ways to setup buttons, I used [this one](https://github.com/LoveBootCaptain/ButtonPi) and set the script up as a service.
 - For the sleep / wake I'm using [MultiSwitch for RetroPie](https://retropie.org.uk/forum/topic/17415/multi-switch-shutdown-script)
 
