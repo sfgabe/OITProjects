@@ -1,3 +1,5 @@
+![Flux Capacitor](https://github.com/sfgabe/OITProjects/blob/master/FluxCapacitor/Images/67d1cc4485dca4827851127ebf528743_preview_featured.jpg)
+
 ## Options
 
 There are two main scripts - .ino and .py - both are constrcuted with basically the same circuit
@@ -33,11 +35,7 @@ There's an opening on the bottom for the HDMI port, usb controller, or power wir
 The lights are made from a sliced and diced [neopixel string](https://amzn.to/2Xf2NYd). To get four of them lined up I had to cut and rewire horizontally in the right pattern. It will be easier to skip the extra wiring and use [a condensed neopixel strip](https://amzn.to/38Ey1xP), but it's what I had around.
 
 ### Electronics
-- [RaspberryPi Zero W](https://amzn.to/2IhKa2l) 
-or
-[NodeMCU](https://amzn.to/2OZJRuT) 
-or
-[WemosD1 Mini](https://amzn.to/2P5WLr6)
+- [RaspberryPi Zero W](https://amzn.to/2IhKa2l) _or_ [NodeMCU](https://amzn.to/2OZJRuT) _or_ [WemosD1 Mini](https://amzn.to/2P5WLr6)
 - [neopixel string](https://amzn.to/2Xf2NYd)
 - [two momentary push buttons](https://amzn.to/2UY3dog) - _optional_
 - [a power LED](https://amzn.to/2PbP4Pc) - _optional_
