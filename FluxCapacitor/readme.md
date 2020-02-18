@@ -1,4 +1,4 @@
-![Flux Capacitor (https://github.com/sfgabe/OITProjects/blob/master/FluxCapacitor/Images/67d1cc4485dca4827851127ebf528743_preview_featured.jpg)
+![Flux Capacitor](https://github.com/sfgabe/OITProjects/blob/master/FluxCapacitor/Images/67d1cc4485dca4827851127ebf528743_preview_featured.jpg)
 
 ## Options
 There are two main scripts - .ino and .py - both are constructed with basically the same circuit
