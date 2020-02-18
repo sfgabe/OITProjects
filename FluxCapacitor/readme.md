@@ -38,11 +38,18 @@ This is a remix of the scale model flux capacitor. Any parts that aren't here ca
 - Some hot glue to keep the lights in place - they are stuck to a small piece of cardboard, but that will need to be glue to the back plate so they are lined up correctly.
 - Small screws to secure the Pi in place
 
-## Software
-###On Raspberry Pi
+##On Raspberry Pi
+
+![Pi Zero Fritzing](https://github.com/sfgabe/OITProjects/blob/master/FluxCapacitor/Images/40b634577ea5f081fd2842161f3c59b6_preview_featured.jpg)
+
 - Everything you need to know about [RetroPie is here](https://retropie.org.uk/). I don't suggest using a PiZero for the more advanced games, but for 80s NES or Atari it works fine with no lag.
 - There are lots of ways to setup buttons, I used [this one](https://github.com/LoveBootCaptain/ButtonPi) and set the script up as a service.
 - For the sleep / wake I'm using [MultiSwitch for RetroPie](https://retropie.org.uk/forum/topic/17415/multi-switch-shutdown-script)
 
-###On NodeMCU, Wemos D1 Mini, or another kind of ESP8266
+![Pi Zero Construction](https://github.com/sfgabe/OITProjects/blob/master/FluxCapacitor/Images/d2b5ca33bd970f64a6301fa75ae2eb22_preview_featured.jpg)
+
+##On NodeMCU, Wemos D1 Mini, or another kind of ESP8266
 - Mostly using the existing FastLED library, with the additions of a "Flux" option.
+
+##With HomeAssistant
+- Use as [an MQTT Light](https://www.home-assistant.io/integrations/light.mqtt/)
