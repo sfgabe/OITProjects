@@ -33,10 +33,14 @@ There's an opening on the bottom for the HDMI port, usb controller, or power wir
 The lights are made from a sliced and diced [neopixel string](https://amzn.to/2Xf2NYd). To get four of them lined up I had to cut and rewire horizontally in the right pattern. It will be easier to skip the extra wiring and use [a condensed neopixel strip](https://amzn.to/38Ey1xP), but it's what I had around.
 
 ### Electronics
-- [RaspberryPi Zero W](https://amzn.to/2IhKa2l) or [NodeMCU](https://amzn.to/2OZJRuT) or[ WemosD1 Mini](https://amzn.to/2P5WLr6)
+- [RaspberryPi Zero W](https://amzn.to/2IhKa2l) 
+or
+[NodeMCU](https://amzn.to/2OZJRuT) 
+or
+[WemosD1 Mini](https://amzn.to/2P5WLr6)
 - [neopixel string](https://amzn.to/2Xf2NYd)
-- [two momentary push buttons](https://amzn.to/2UY3dog) - optional
-- [a power LED](https://amzn.to/2PbP4Pc) - optional
+- [two momentary push buttons](https://amzn.to/2UY3dog) - _optional_
+- [a power LED](https://amzn.to/2PbP4Pc) - _optional_
 - To fit a Pi Zero you'll need [right angle header pins](https://amzn.to/2GhRV4L)
 - and some headers and [jumper cables](https://amzn.to/2DfQHX4) to put it all together
 - If you're using this for RetroPie you'll need a smaller HDMI adapter, as the one that comes in the CanaKit is too big - [this one works](https://amzn.to/2UTvE6X)
@@ -54,4 +58,4 @@ This is a remix of the scale model flux capacitor. Any parts that aren't here ca
 ### Other stuff
 - [Hot glue sticks](https://amzn.to/2SHnNaJ) - I tried a few ideas for the light diffusers, and the thing that looked best were small sized hot glue sticks, cut to size and wedged into the back plate.
 - Some hot glue to keep the lights in place - they are stuck to a small piece of cardboard, but that will need to be glue to the back plate so they are lined up correctly.
-- Small screws to secure the Pi in place
+- Small screws to secure the board in place
