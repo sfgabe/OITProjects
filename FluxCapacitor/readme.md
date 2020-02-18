@@ -56,3 +56,4 @@ This is a remix of the scale model flux capacitor. Any parts that aren't here ca
 - [Hot glue sticks](https://amzn.to/2SHnNaJ) - I tried a few ideas for the light diffusers, and the thing that looked best were small sized hot glue sticks, cut to size and wedged into the back plate.
 - Some hot glue to keep the lights in place - they are stuck to a small piece of cardboard, but that will need to be glue to the back plate so they are lined up correctly.
 - Small screws to secure the board in place
+- Clear plastic for the window, I just cut it our from a document protector 
