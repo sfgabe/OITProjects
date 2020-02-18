@@ -25,6 +25,8 @@ Video here: https://youtu.be/O8Gv1gEYWtU
 
 ![Pi Zero Construction](https://github.com/sfgabe/OITProjects/blob/master/FluxCapacitor/Images/d2b5ca33bd970f64a6301fa75ae2eb22_preview_featured.jpg)
 
+![Pi Zero Construction](https://github.com/sfgabe/OITProjects/blob/master/FluxCapacitor/Images/d2b5ca33bd970f64a6301fa75ae2eb23_preview_featured.jpg)
+
 ## Construction
 
 The 3d printed case uses a neopixel string as a mini Flux Capacitor from Back to the Future. STLs are here or on Thingiverse: https://www.thingiverse.com/thing:3562949
