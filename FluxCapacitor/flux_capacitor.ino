@@ -45,7 +45,7 @@ const int BUFFER_SIZE = JSON_OBJECT_SIZE(10);
 
 /*********************************** FastLED Defintions ********************************/
 #define NUM_LEDS    12
-#define DATA_PIN    6
+#define DATA_PIN    4
 //#define CLOCK_PIN 5
 #define CHIPSET     WS2811
 #define COLOR_ORDER GRB
@@ -58,13 +58,6 @@ byte red = 255;
 byte green = 255;
 byte blue = 255;
 byte brightness = 255;
-
-/*********************************** Flux Bar Defintions ********************************/
-/*********************** A is outer group | D is inner group ****************************/
-#define FluxLevel_A 0, 4, 11
-#define FluxLevel_B 1, 5, 10
-#define FluxLevel_C 2, 6, 9
-#define FluxLevel_D 3, 7, 8
 
 /******************************** GLOBALS for fade/flash *******************************/
 bool stateOn = false;
@@ -131,7 +124,7 @@ int lightningcounter = 0;
 
 //FUNKBOX
 int idex = 0;                //-LED INDEX (0 to NUM_LEDS-1
-int TOP_INDEX = int(NUM_LEDS / 3);
+int TOP_INDEX = int(NUM_LEDS / 5);
 int thissat = 255;           //-FX LOOPS DELAY VAR
 uint8_t thishuepolice = 0;
 int antipodal_index(int i) {
@@ -507,105 +500,6 @@ void loop() {
     showleds();
   }
 
-
-  //EFFECT CYCLON RAINBOW
-  if (effectString == "cyclon rainbow") {                    //Single Dot Down
-    static uint8_t hue = 0;
-    
-    // Set Flux Groups    
-    int GroupA = {FluxLevel_A};
-    int GroupB = {FluxLevel_B};
-    int GroupC = {FluxLevel_C};
-    int GroupD = {FluxLevel_D};
-
-    // First slide the led in one direction
-    for (int i = 0; i < NUM_LEDS; i++) {
-      // Group A
-      // Set the i'th led to red
-      leds[GroupA[i]] = CHSV(hue++, 255, 255);
-      // Show the leds
-      showleds();
-      // now that we've shown the leds, reset the i'th led to black
-      // leds[GroupA[i]] = CRGB::Black;
-      fadeall();
-      // Wait a little bit before we loop around and do it again
-      delay(10);
-      // Group B
-      // Set the i'th led to red
-      leds[GroupB[i]] = CHSV(hue++, 255, 255);
-      // Show the leds
-      showleds();
-      // now that we've shown the leds, reset the i'th led to black
-      // leds[GroupB[i]] = CRGB::Black;
-      fadeall();
-      // Wait a little bit before we loop around and do it again
-      delay(10);
-      // Group C
-      // Set the i'th led to red
-      leds[GroupC[i]] = CHSV(hue++, 255, 255);
-      // Show the leds
-      showleds();
-      // now that we've shown the leds, reset the i'th led to black
-      // leds[GroupC[i]] = CRGB::Black;
-      fadeall();
-      // Wait a little bit before we loop around and do it again
-      delay(10);
-      // Group D
-      // Set the i'th led to red
-      leds[GroupD[i]] = CHSV(hue++, 255, 255);
-      // Show the leds
-      showleds();
-      // now that we've shown the leds, reset the i'th led to black
-      // leds[GroupD[i]] = CRGB::Black;
-      fadeall();
-      // Wait a little bit before we loop around and do it again
-      delay(10);
-    }
-    for (int i = (NUM_LEDS) - 1; i >= 0; i--) {
-      // Group A
-      // Set the i'th led to red
-      leds[GroupA[i]] = CHSV(hue++, 255, 255);
-      // Show the leds
-      showleds();
-      // now that we've shown the leds, reset the i'th led to black
-      // leds[GroupA[i]] = CRGB::Black;
-      fadeall();
-      // Wait a little bit before we loop around and do it again
-      delay(10);
-      // Group B
-      // Set the i'th led to red
-      leds[GroupB[i]] = CHSV(hue++, 255, 255);
-      // Show the leds
-      showleds();
-      // now that we've shown the leds, reset the i'th led to black
-      // leds[GroupB[i]] = CRGB::Black;
-      fadeall();
-      // Wait a little bit before we loop around and do it again
-      delay(10);
-      // Group C
-      // Set the i'th led to red
-      leds[GroupC[i]] = CHSV(hue++, 255, 255);
-      // Show the leds
-      showleds();
-      // now that we've shown the leds, reset the i'th led to black
-      // leds[GroupC[i]] = CRGB::Black;
-      fadeall();
-      // Wait a little bit before we loop around and do it again
-      delay(10);
-      // Group D
-      // Set the i'th led to red
-      leds[GroupD[i]] = CHSV(hue++, 255, 255);
-      // Show the leds
-      showleds();
-      // now that we've shown the leds, reset the i'th led to black
-      // leds[GroupD[i]] = CRGB::Black;
-      fadeall();
-      // Wait a little bit before we loop around and do it again
-      delay(10);
-    }
-  }
-
-
   //EFFECT DOTS
   if (effectString == "dots") {
     uint8_t inner = beatsin8(bpm, NUM_LEDS / 4, NUM_LEDS / 4 * 3);
@@ -730,15 +624,15 @@ void loop() {
   }
 
      //EFFECT FLUX CAPACITOR
-  if (effectString == "flux capacitor") {                
+  if (effectString == "flux") {                
     idex++;
     if (idex >= NUM_LEDS) {
       idex = 0;
     }
     int idexY = idex;
     int idexW = antipodal_index(idexY);
-    leds[idexY] = CHSV(250, 191, 115);
-    leds[idexW] = CHSV(252, 237, 162);
+    leds[idexY] = CRGB(255, 255, 71);
+    leds[idexW] = CRGB(255, 200, 36);
     if (transitionTime == 0 or transitionTime == NULL) {
       transitionTime = 30;
     }
