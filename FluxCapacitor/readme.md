@@ -1,6 +1,6 @@
 # Flux Capacitor 
 **controlled with Raspberry Pi or MQTT on a Pi or ESP8266**
-![Flux Capacitor](https://github.com/sfgabe/OITProjects/blob/master/FluxCapacitor/Images/67d1cc4485dca4827851127ebf528743_preview_featured.jpg)
+![Flux Capacitor](https://github.com/sfgabe/OITProjects/blob/master/FluxCapacitor/Images/giphy2637108837831749038.gif)
 
 ## Options
 There are two scripts - .ino and .py - both are constructed with basically the same circuit, use whichever bit of hardware you have
