@@ -1,11 +1,12 @@
-# Flux Capacitor controlled with Raspberry Pi or MQTT
+# Flux Capacitor 
+**controlled with Raspberry Pi or MQTT on a Pi or ESP8266**
 ![Flux Capacitor](https://github.com/sfgabe/OITProjects/blob/master/FluxCapacitor/Images/67d1cc4485dca4827851127ebf528743_preview_featured.jpg)
 
 ## Options
 There are two main scripts - .ino and .py - both are constructed with basically the same circuit
 
 - **flux_capacitor.py** is a python script that can be used by a Raspberry Pi with a trigger of your choosing. It looks cool as a RetroPi enclosure with a pi Zero, can be activated with startup or the push of a button. I set it up a  [RetroPie](https://retropie.org.uk/) for some classic video games.
-- **flux_capacitor.ino** is an Arduino script that uses MQTT to control the light, great for fun notifications via [Home Assistant](https://www.home-assistant.io/)
+- **flux_capacitor.ino** is an Arduino script that can be used on a NodeMCU or another ESP8266. It uses MQTT to control the light, great for fun notifications via [Home Assistant](https://www.home-assistant.io/)
 
 Video here: https://youtu.be/O8Gv1gEYWtU
 
