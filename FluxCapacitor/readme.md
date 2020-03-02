@@ -13,6 +13,7 @@ Video here: https://youtu.be/O8Gv1gEYWtU
 ## Programming
 ### On NodeMCU, Wemos D1 Mini, or another kind of ESP8266
 - Mostly using the existing FastLED library, with the additions of a "Flux" option.
+![NodeMCU Fritzing](https://github.com/sfgabe/OITProjects/blob/master/FluxCapacitor/Images/flux_nodemcu_bb.png)
 
 ### With ESP8266 and HomeAssistant
 - Use as [an MQTT Light](https://www.home-assistant.io/integrations/light.mqtt/)
