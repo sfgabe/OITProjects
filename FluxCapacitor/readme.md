@@ -27,7 +27,7 @@ There are two scripts - .ino and .py - both are constructed with basically the s
 
 The 3d printed case uses a neopixel string as a mini Flux Capacitor from Back to the Future. STLs are here or on Thingiverse: https://www.thingiverse.com/thing:4148340
 
-There's an opening on the bottom for the HDMI port, usb controller, or power wires. On the Pi, I have [two momentary push buttons](https://amzn.to/2UY3dog) and [a power LED](https://amzn.to/2PbP4Pc) mapped to a sleep/wake script and a script to toggle between the flux lights and some other patterns. On the ESP8266, I just have a status LED since it's controlled externally.
+There's an opening on the bottom for the HDMI port, usb controller, or power wires. On the Pi, I have [two momentary push buttons](https://amzn.to/2UY3dog) and [a power LED](https://amzn.to/2PbP4Pc) mapped to a sleep/wake script and a script to toggle between the flux lights and some other patterns.
 
 The lights are made from a sliced and diced [neopixel string](https://amzn.to/2Xf2NYd). To get four of them lined up I had to cut and rewire horizontally in the right pattern. It will be easier to skip the extra wiring and use [a condensed neopixel strip](https://amzn.to/38Ey1xP), but it's what I had around.
 
@@ -42,7 +42,6 @@ The lights are made from a sliced and diced [neopixel string](https://amzn.to/2X
 - [a power LED](https://amzn.to/2PbP4Pc) - _optional_
 - To fit a Pi Zero you'll need [right angle header pins](https://amzn.to/2GhRV4L)
 - and some headers and [jumper cables](https://amzn.to/2DfQHX4) to put it all together
-- If you're using this for RetroPie you'll need a smaller HDMI adapter, as the one that comes in the CanaKit is too big - [this one works](https://amzn.to/2UTvE6X)
 
 ### Printed Parts
 This is a remix of the scale model flux capacitor. Any parts that aren't here can just be scaled up from [SconNL's Design](https://www.thingiverse.com/thing:3497663) by 250%.
