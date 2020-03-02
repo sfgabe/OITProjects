@@ -1,0 +1,28 @@
+#flux_capacitor
+- platform: mqtt
+  schema: json
+  command_topic: "flux-capacitor/set"
+  state_topic: "flux-capacitor/current" 
+  name: "Flux Capacitor"
+  optimistic: true
+  retain: true
+  brightness: true
+  effect: true
+  rgb: true
+  effect_list:
+    - "solid"
+    - "flux"
+    - "rainbow"
+    - "rainbow with glitter"
+    - "candy cane"
+    - "bpm"
+    - "confetti"
+    - "noise"
+    - "ripple"
+    - "fire"
+    - "twinkle"
+    - "lightning"
+    - "dots"
+    - "glitter"
+    - "juggle"
+    - "police all"
