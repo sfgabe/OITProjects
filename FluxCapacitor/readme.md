@@ -1,5 +1,5 @@
 # Flux Capacitor 
-**controlled with Raspberry Pi or MQTT on a Pi or ESP8266**
+**controlled with Raspberry Pi or MQTT on a ESP8266**
 
 ![Flux Capacitor](https://github.com/sfgabe/OITProjects/blob/master/FluxCapacitor/Images/giphy2637108837831749038.gif)
 
@@ -11,12 +11,11 @@ There are two scripts - .ino and .py - both are constructed with basically the s
 - **flux_capacitor.py** is a python script that can be used by a Raspberry Pi with a trigger of your choosing. I set it up a  [RetroPie](https://retropie.org.uk/) for some classic video games, and can be activated with startup or the push of a button.
 
 ## Programming
-### With ESP8266 and HomeAssistant
-- Once it's set up you can treat it as [an MQTT Light](https://www.home-assistant.io/integrations/light.mqtt/) in Home Assistant. Refer to the YAML files for how to add that in.
 
 ### On NodeMCU, Wemos D1 Mini, or another kind of ESP8266
 - Mostly using the existing FastLED library, with the additions of a "Flux" option.
 ![NodeMCU Fritzing](https://github.com/sfgabe/OITProjects/blob/master/FluxCapacitor/Images/flux_nodemcu_bb.png)
+- Once it's set up you can treat it as [an MQTT Light](https://www.home-assistant.io/integrations/light.mqtt/) in Home Assistant. Refer to the YAML files for how to add that in.
 
 ### On Raspberry Pi
 
