@@ -3,7 +3,7 @@
 ![Flux Capacitor](https://github.com/sfgabe/OITProjects/blob/master/FluxCapacitor/Images/67d1cc4485dca4827851127ebf528743_preview_featured.jpg)
 
 ## Options
-There are two main scripts - .ino and .py - both are constructed with basically the same circuit
+There are two scripts - .ino and .py - both are constructed with basically the same circuit, use whichever bit of hardware you have
 
 - **flux_capacitor.py** is a python script that can be used by a Raspberry Pi with a trigger of your choosing. It looks cool as a RetroPi enclosure with a pi Zero, can be activated with startup or the push of a button. I set it up a  [RetroPie](https://retropie.org.uk/) for some classic video games.
 - **flux_capacitor.ino** is an Arduino script that can be used on a NodeMCU or another ESP8266. It uses MQTT to control the light, great for fun notifications via [Home Assistant](https://www.home-assistant.io/)
@@ -11,22 +11,18 @@ There are two main scripts - .ino and .py - both are constructed with basically 
 Video here: https://youtu.be/O8Gv1gEYWtU
 
 ## Programming
+### With ESP8266 and HomeAssistant
+- Once it's set up you can treat it as [an MQTT Light](https://www.home-assistant.io/integrations/light.mqtt/) in Home Assistant
+
 ### On NodeMCU, Wemos D1 Mini, or another kind of ESP8266
 - Mostly using the existing FastLED library, with the additions of a "Flux" option.
 ![NodeMCU Fritzing](https://github.com/sfgabe/OITProjects/blob/master/FluxCapacitor/Images/flux_nodemcu_bb.png)
-
-### With ESP8266 and HomeAssistant
-- Use as [an MQTT Light](https://www.home-assistant.io/integrations/light.mqtt/)
 
 ### On Raspberry Pi
 
 ![Pi Zero Fritzing](https://github.com/sfgabe/OITProjects/blob/master/FluxCapacitor/Images/40b634577ea5f081fd2842161f3c59b6_preview_featured.jpg)
 - There are lots of ways to setup buttons, I used [this one](https://github.com/LoveBootCaptain/ButtonPi) and set the script up as a service.
 - For the sleep / wake I'm using [MultiSwitch for RetroPie](https://retropie.org.uk/forum/topic/17415/multi-switch-shutdown-script)
-
-![Pi Zero Construction](https://github.com/sfgabe/OITProjects/blob/master/FluxCapacitor/Images/d2b5ca33bd970f64a6301fa75ae2eb22_preview_featured.jpg)
-
-![Pi Zero Construction](https://github.com/sfgabe/OITProjects/blob/master/FluxCapacitor/Images/d2b5ca33bd970f64a6301fa75ae2eb23_preview_featured.jpg)
 
 ## Construction
 
@@ -35,6 +31,10 @@ The 3d printed case uses a neopixel string as a mini Flux Capacitor from Back to
 There's an opening on the bottom for the HDMI port, usb controller, or power wires. On the top is space for [two momentary push buttons](https://amzn.to/2UY3dog) and [a power LED](https://amzn.to/2PbP4Pc). On the Pi, I have the buttons mapped to a sleep/wake script and a script to toggle between the flux lights and some other patterns. On the ESP8266, I just have a status LED since it's controlled externally.
 
 The lights are made from a sliced and diced [neopixel string](https://amzn.to/2Xf2NYd). To get four of them lined up I had to cut and rewire horizontally in the right pattern. It will be easier to skip the extra wiring and use [a condensed neopixel strip](https://amzn.to/38Ey1xP), but it's what I had around.
+
+![Pi Zero Construction](https://github.com/sfgabe/OITProjects/blob/master/FluxCapacitor/Images/d2b5ca33bd970f64a6301fa75ae2eb22_preview_featured.jpg)
+
+![Pi Zero Construction](https://github.com/sfgabe/OITProjects/blob/master/FluxCapacitor/Images/d2b5ca33bd970f64a6301fa75ae2eb23_preview_featured.jpg)
 
 ### Electronics
 - [RaspberryPi Zero W](https://amzn.to/2IhKa2l) _or_ [NodeMCU](https://amzn.to/2OZJRuT) _or_ [WemosD1 Mini](https://amzn.to/2P5WLr6)
