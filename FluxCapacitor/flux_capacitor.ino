@@ -45,8 +45,7 @@ const int BUFFER_SIZE = JSON_OBJECT_SIZE(10);
 
 /*********************************** FastLED Defintions ********************************/
 #define NUM_LEDS    12
-#define DATA_PIN    4
-//#define CLOCK_PIN 5
+#define DATA_PIN    6
 #define CHIPSET     WS2811
 #define COLOR_ORDER GRB
 
