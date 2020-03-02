@@ -1,0 +1,23 @@
+# Sample Automation / Flux whie music is playinmg
+
+- alias: Fluxing for music on
+  trigger:
+    platform: state
+    entity_id: media_player.mpd
+    to: "playing"
+  action:
+    - service: light.turn_on
+      entity_id: light.flux_capacitor
+      data:
+        brightness: 78
+        rgb_color: [255,208,71]
+        effect: flux
+
+- alias: Fluxing off
+  trigger:
+    platform: state
+    entity_id: media_player.mpd
+    to: "off"
+  action:
+    - service: light.turn_off
+      entity_id: light.flux_capacitor
