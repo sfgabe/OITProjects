@@ -37,7 +37,7 @@ _Note: Don't add the servo arm until you've tested the code because it needs to 
 ## Upload and Test ##
 Upload the code with Arduino, however you usually do that, install the switchplate and hide the board somewhere near the lightswitch (mine conveniently runs behind a cabinet) and power up.
 
-Once it starts up the servo should find it's default "neutral" rotation, now you can add the two sided servo arm that is neither on nor off.
+Once it starts up the servo should find it's default "neutral" rotation, now you can add the two sided servo arm at an angle that is neither on nor off.
 
 ## Setup for Home Assistant ##
 
