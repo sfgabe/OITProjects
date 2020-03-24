@@ -53,7 +53,7 @@ __Switch for light in switches.yaml__
   payload_off: "3"
   value_template: '{{ value_json.state }}'
 ```
-*Note: Home assistant sends MQTT messages as strings, which unfortunatly this JSON library doesnt parse. You may need to adjust for your switches [with this handy chart](https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html). For example, my switch works with ON at 51 degrees (ascii payload "3") and OFF at 80 degrees (ascii payload "P").*
+*Note: Home assistant sends MQTT messages as strings, which unfortunatly this Servo library doesnt parse correctly, so we need to convert degrees into ascii. You may need to adjust for your switches [with this handy chart](https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html). For example, my switch works with OFF at 51 degrees (ascii payload "3") and ON at 80 degrees (ascii payload "P").*
 
 __Sensor for motion sensor in binary_sensor.yaml__
 ```
