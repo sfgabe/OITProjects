@@ -10,6 +10,7 @@ This is a switchplate for adding a mechanical micro servo to decora/paddle style
 - [SG90 servo](https://amzn.to/2GtNXtw)
 - [ESP8266 / NodeMCU / WEMOS D1 / etc. ](https://amzn.to/3drUMI8)
 - [MQTT with Home Assistant](https://www.home-assistant.io/integrations/mqtt/) (or some other MQTT server setup)
+- Some jumper cables and a microUSB plug
 
 ## Printing and Assembly ##
 Prints best lying flat, with supports. It doesn't matter if the supports make it look scrappy because they're on the back.
