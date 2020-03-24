@@ -5,7 +5,7 @@ Turn your lights on and off remotely and still get your security deposit back!
 
 This is a switchplate for adding a mechanical micro servo to decora/paddle style lightswitches. There's still enough room to operate the switch manually, so you can still use it the regular way too (but how boring!).
 
-You'll need:
+## Materials ##
 - [printed switchplate](/RentersLightSwitch/lightswitch-servo-plate.stl) or on [Thingiverse here](https://www.thingiverse.com/thing:3289916) or duct tape I guess?
 - [SG90 servo](https://amzn.to/2GtNXtw)
 - [ESP8266 / NodeMCU / WEMOS D1 / etc. ](https://amzn.to/3drUMI8)
