@@ -1,7 +1,7 @@
 # Renter's Light Switch #
 Turn your lights on and off remotely and still get your security deposit back! 
 
-![Lightswitch1](/RentersLightSwitch/lightswitch1.png "Lightswitch1")
+![Lightswitch1](RentersLightSwitch/giphy8317845082817620066.gif "Lightswitch1")
 
 This is a switchplate for adding a mechanical micro servo to decora/paddle style lightswitches. There's still enough room to operate the switch manually, so you can still use it the regular way too (but how boring!).
 
