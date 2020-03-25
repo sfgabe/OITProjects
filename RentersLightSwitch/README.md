@@ -9,6 +9,7 @@ This is a switchplate for adding a mechanical micro servo to decora/paddle style
 - [printed switchplate](/RentersLightSwitch/lightswitch-servo-plate.stl) or on [Thingiverse here](https://www.thingiverse.com/thing:3289916) or duct tape I guess?
 - [SG90 servo](https://amzn.to/2GtNXtw)
 - [ESP8266 / NodeMCU / WEMOS D1 / etc. ](https://amzn.to/3drUMI8)
+- [PIR sensor](https://amzn.to/3btcI3h) _optional_
 - [MQTT with Home Assistant](https://www.home-assistant.io/integrations/mqtt/) (or some other MQTT server setup)
 - Some jumper cables and a microUSB plug
 
