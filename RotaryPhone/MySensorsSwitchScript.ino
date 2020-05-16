@@ -11,7 +11,7 @@
 #define ProjectVersion "v0.1"   // Version that is visible in controller
 #define MY_DEBUG               // Enable debug prints to serial monitor
 #define MY_RADIO_NRF24         // Enable and select radio type attached
-#define MY_NODE_ID 53          // HomeAssistant needs this
+#define MY_NODE_ID 53         // HomeAssistant needs this
 #define childIdDoor 1          // child ID number used by mysensors foor doorbell button
 #define childIdRing_1 11       // child ID number used by mysensors to activate ringtone 1
 #define childIdRing_2 12       // child ID number used by mysensors to activate ringtone 2
