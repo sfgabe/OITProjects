@@ -42,33 +42,36 @@ def greeting():
     greetingfile = '/etc/custom-scripts/sfx/greeting/' + randomgreeting
     logging.info(greetingfile)
     aiy.voice.audio.play_wav(greetingfile)
-
-def goodbye():
+    def goodbye():
     randomgoodbye = random.choice(os.listdir("/etc/custom-scripts/sfx/goodbye/"))
     goodbyefile = '/etc/custom-scripts/sfx/goodbye/' + randomgoodbye
     logging.info(goodbyefile)
     aiy.voice.audio.play_wav(goodbyefile)
 
+def unavailable():
+    randomunavailable = random.choice(os.listdir("/etc/custom-scripts/sfx/unavailable/"))
+    unavailablefile = '/etc/custom-scripts/sfx/unavailable/' + randomunavailable
+    logging.info(unavailablefile)
+    aiy.voice.audio.play_wav(unavailablefile)
+
 class MyAssistant:
 
     def __init__(self):
-            self._task = threading.Thread(target=self._run_task)
+        self._task = threading.Thread(target=self._run_task)
         self._can_start_conversation = False
         self._assistant = None
         self._board = Board()
         self._board.language_code = 'en-US'
         self._board.volume_percentage = 100
+#       which one of these to uncomment depends on your phone inner workings
         self._board.button.when_pressed = self._on_button_pressed
+#        self._board.button.when_released = self._on_button_released
 
     def start(self):
-        """Starts the assistant.
-
-        Starts the assistant event loop and begin processing events.
-        """
         self._task.start()
 
     def _run_task(self):
-            credentials = auth_helpers.get_assistant_credentials()
+        credentials = auth_helpers.get_assistant_credentials()
         with Assistant(credentials) as assistant:
             self._assistant = assistant
             for event in assistant.start():
@@ -77,45 +80,42 @@ class MyAssistant:
     def _process_event(self, event):
         logging.info(event)
         if event.type == EventType.ON_START_FINISHED:
-            self._board.led.status = Led.OFF  # Ready.
+            self._board.led.status = Led.OFF 
             self._can_start_conversation = True
-            # Start the voicehat button trigger.
-            logging.info('Say "OK, Google" or press the button, then speak. '
-                         'Press Ctrl+C to quit...')
-
 
         elif event.type == EventType.ON_CONVERSATION_TURN_STARTED:
             self._can_start_conversation = False
-            self._board.led.state = Led.ON  # Listening.
+            self._board.led.state = Led.ON
 
         elif event.type == EventType.ON_END_OF_UTTERANCE:
-            self._board.led.state = Led.PULSE_QUICK  # Thinking.
+            self._board.led.state = Led.PULSE_QUICK
 
         elif (event.type == EventType.ON_CONVERSATION_TURN_FINISHED
               or event.type == EventType.ON_CONVERSATION_TURN_TIMEOUT
               or event.type == EventType.ON_NO_RESPONSE):
-            # Wait for 2 seconds
             time.sleep(2)
             goodbye()
-            self._board.led.state = Led.OFF  # Ready.
+            self._board.led.state = Led.OFF 
             self._can_start_conversation = True
 
         elif event.type == EventType.ON_ASSISTANT_ERROR and event.args and event.args['is_fatal']:
             sys.exit(1)
 
+    def _operator(self):
+        greeting()
+        self._assistant.start_conversation()
+
+#       which one of these to uncomment depends on your phone inner workings        
     def _on_button_pressed(self):
-        # Check if we can start a conversation. 'self._can_start_conversation'
-        # is False when either:
-        # 1. The assistant library is not yet ready; OR
-        # 2. The assistant library is already in a conversation.
+#    def _on_button_released(self):
+        answer = [self._operator, self._operator, self._operator, self._operator, unavailable]
+
         if self._can_start_conversation:
-            greeting()
-            self._assistant.start_conversation()
+            random.choice(answer)()
 
 def main():
     logging.basicConfig(level=logging.INFO)
     MyAssistant().start()
-
-
+    
 if __name__ == '__main__':
     main()
