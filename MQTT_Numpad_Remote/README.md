@@ -13,6 +13,6 @@ Home Assistant is great, but I found sometimes I just wanted a physical button o
 #### Assembly: ####
 You can follow the basic handwiring guide for the [Void9](https://victorlucachi.ro/journal/void9-wiring-guide/) here. Wire the switches and diodes according to the tutorial _(up to step 7)_. When it comes to wiring to the board, instead of using an Arduino ProMicro, you'll be using the NodeMCU / ESP8266.
 
-![3x3Matrix](https://github.com/sfgabe/OITProjects/blob/master/FluxCapacitor/Images/giphy2637108837831749038.gif)
-![3x3Diodes](https://github.com/sfgabe/OITProjects/blob/master/FluxCapacitor/Images/giphy2637108837831749038.gif)
-![3x3wired](https://github.com/sfgabe/OITProjects/blob/master/FluxCapacitor/Images/giphy2637108837831749038.gif)
+![3x3_keygrid](https://github.com/sfgabe/OITProjects/blob/master/MQTT_Numpad_Remote/3x3_keygrid.jpg)
+![3x3_dIodebend](https://github.com/sfgabe/OITProjects/blob/master/MQTT_Numpad_Remote/3x3_dIodebend.jpg)
+![3x3wires](https://github.com/sfgabe/OITProjects/blob/master/MQTT_Numpad_Remote/3x3wires.jpg)
