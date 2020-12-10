@@ -3,7 +3,7 @@
 
 Home Assistant is great, but I found sometimes I just wanted a physical button on hand to toggle lights and things on and off, so I built a 3x3 matrix mechanical keyboard that sends messages via MQTT to Home Assistant. There are 9 buttons, which can be set to do anything you can do through Home Assistant switches or scripts. Note: this isn't a true remote, as it needs to be plugged in to a usb wall plug to get power, but it can control whatever is connected to your HomeAssistant remotely.
 
-![3x3_remotegif](https://github.com/sfgabe/OITProjects/blob/master/MQTT_Numpad_Remote/20201210_174127.gif)
+![3x3_remotegif](https://github.com/sfgabe/OITProjects/blob/master/MQTT_Numpad_Remote/20201210_174751.gif)
 
 #### Parts: ####
 - 9 [mechanical cherry mx style key switches](https://amzn.to/3764lM3)
