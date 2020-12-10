@@ -1,0 +1,29 @@
+
+#numpad buttons
+numpad_button_a:
+  name: Numpad A
+  initial: off
+numpad_button_b:
+  name: Numpad B
+  initial: off
+numpad_button_c:
+  name: Numpad C
+  initial: off
+numpad_button_d:
+  name: Numpad D
+  initial: off
+numpad_button_e:
+  name: Numpad E
+  initial: off
+numpad_button_f:
+  name: Numpad F
+  initial: off
+numpad_button_g:
+  name: Numpad G
+  initial: off
+numpad_button_h:
+  name: Numpad H
+  initial: off
+numpad_button_i:
+  name: Numpad I
+  initial: off
