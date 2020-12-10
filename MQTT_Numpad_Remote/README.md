@@ -3,6 +3,8 @@
 
 Home Assistant is great, but I found sometimes I just wanted a physical button on hand to toggle lights and things on and off, so I built a 3x3 matrix mechanical keyboard that sends messages via MQTT to Home Assistant. There are 9 buttons, which can be set to do anything you can do through Home Assistant switches or scripts.
 
+![3x3_remotegif](https://github.com/sfgabe/OITProjects/blob/master/MQTT_Numpad_Remote/20201210_174127.gif)
+
 #### Parts: ####
 - 9 [mechanical cherry mx style key switches](https://amzn.to/3764lM3)
 - 9 [diodes for switches & wires](https://amzn.to/3gAZWUv)
@@ -30,3 +32,5 @@ When it comes to wiring to the board _(step 8)_, instead of using an Arduino Pro
 - Col 1 ---->  Pin 5
 - Col 2 ---->  Pin 4
 - Col 3 ---->  Pin 0
+
+After it's wired up, you should be able to load the .ino file on to the NodeMCU and see that it's connecting to your Home Assistant installation through the MQTT integrations panel. Add the yaml code into your config files and add whatever automations you want!
