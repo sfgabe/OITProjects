@@ -1,7 +1,7 @@
 ![3x3_remote](https://github.com/sfgabe/OITProjects/blob/master/MQTT_Numpad_Remote/IMG_20201202_203634_075.jpg)
 ## Remote for Home Assistant with MQTT ##
 
-Home Assistant is great, but I found sometimes I just wanted a physical button on hand to toggle lights and things on and off, so I built a 3x3 matrix mechanical keyboard that sends messages via MQTT to Home Assistant. There are 9 buttons, which can be set to do anything you can do through Home Assistant switches or scripts.
+Home Assistant is great, but I found sometimes I just wanted a physical button on hand to toggle lights and things on and off, so I built a 3x3 matrix mechanical keyboard that sends messages via MQTT to Home Assistant. There are 9 buttons, which can be set to do anything you can do through Home Assistant switches or scripts. Note: this isn't a true remote, as it needs to be plugged in to a usb wall plug to get power, but it can control whatever is connected to your HomeAssistant remotely.
 
 ![3x3_remotegif](https://github.com/sfgabe/OITProjects/blob/master/MQTT_Numpad_Remote/20201210_174127.gif)
 
@@ -11,7 +11,7 @@ Home Assistant is great, but I found sometimes I just wanted a physical button o
 - 9 [LEDs](https://amzn.to/3785W3Y) (optional)
 - a [nodeMCU / ESP8266 board](https://amzn.to/2JWhQF0)
 - a [HomeAssistant installation](https://www.home-assistant.io/) with an MQTT server enabled
-- printed or CNC cut grid and enclosure - basic printed enclosure and handwire mechanical keyboard grid [from these files on Thingiverse](https://www.thingiverse.com/thing:4222157)
+- printed or CNC cut grid and enclosure - basic printed enclosure and handwire mechanical keyboard grid [from these files on Thingiverse](https://www.thingiverse.com/thing:4222157). I started with the printed enclosure and eventually just made a wooden box for it as an upgrade,
 
 #### Assembly: ####
 Push the switches into the printed grid and follow the handwiring guide for the [Void9](https://victorlucachi.ro/journal/void9-wiring-guide/) here. Wire the switches and diodes according to the tutorial _(only up to step 7)_.
