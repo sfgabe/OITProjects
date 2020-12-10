@@ -1,3 +1,4 @@
+![3x3_remote](https://github.com/sfgabe/OITProjects/blob/master/MQTT_Numpad_Remote/IMG_20201202_203634_075.jpg)
 ## Remote for Home Assistant with MQTT ##
 
 Home Assistant is great, but I found sometimes I just wanted a physical button on hand to toggle lights and things on and off, so I built a 3x3 matrix mechanical keyboard that sends messages via MQTT to Home Assistant. There are 9 buttons, which can be set to do anything you can do through Home Assistant switches or scripts.
@@ -21,11 +22,11 @@ You can also add the LEDs through the slots in the switches and wire them in par
 
 When it comes to wiring to the board _(step 8)_, instead of using an Arduino ProMicro, you'll be using the NodeMCU / ESP8266 and connecting like this:
 
-LED - ---->  Ground
-LED + ---->  Pin 2
-Row 1 ---->  Pin 14
-Row 2 ---->  Pin 12
-Row 3 ---->  Pin 13
-Col 1 ---->  Pin 5
-Col 2 ---->  Pin 4
-Col 3 ---->  Pin 0
+- LED - ---->  Ground
+- LED + ---->  Pin 2
+- Row 1 ---->  Pin 14
+- Row 2 ---->  Pin 12
+- Row 3 ---->  Pin 13
+- Col 1 ---->  Pin 5
+- Col 2 ---->  Pin 4
+- Col 3 ---->  Pin 0
