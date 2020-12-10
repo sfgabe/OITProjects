@@ -11,7 +11,11 @@ Home Assistant is great, but I found sometimes I just wanted a physical button o
 - printed or CNC cut grid and enclosure - basic printed enclosure and handwire mechanical keyboard grid [from these files on Thingiverse](https://www.thingiverse.com/thing:4222157)
 
 #### Assembly: ####
-You can follow the basic handwiring guide for the [Void9](https://victorlucachi.ro/journal/void9-wiring-guide/) here. Wire the switches and diodes according to the tutorial _(up to step 7)_. When it comes to wiring to the board, instead of using an Arduino ProMicro, you'll be using the NodeMCU / ESP8266.
+You can follow the basic handwiring guide for the [Void9](https://victorlucachi.ro/journal/void9-wiring-guide/) here. Wire the switches and diodes according to the tutorial _(up to step 7)_.
+
+You can also add the LEDs through the slots in the switches and wire them in parallel with a resistor on the ground wire. There arent enough pins to control them individually, so the whole matrix lights on each keypress.
+
+When it comes to wiring to the board, instead of using an Arduino ProMicro, you'll be using the NodeMCU / ESP8266.
 
 ![3x3_keygrid](https://github.com/sfgabe/OITProjects/blob/master/MQTT_Numpad_Remote/3x3_keygrid.jpg)
 ![3x3_dIodebend](https://github.com/sfgabe/OITProjects/blob/master/MQTT_Numpad_Remote/3x3_dIodebend.jpg)
