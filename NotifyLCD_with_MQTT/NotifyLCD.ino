@@ -145,6 +145,10 @@ else if (sTopic == "notifyscreen/backlight") {
       lcd.display(); 
       lcd.backlight(); }
     else if (message == "0") {
+      lcd.clear()
+      delay(500);
+      lcd.noBacklight();
+      delay(500);
       lcd.noDisplay();}
     else {
       lcd.noBacklight();
