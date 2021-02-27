@@ -22,7 +22,7 @@ This is an MQTT notification board for use with Home Assistant (or whatever else
 - Wire up according to the Fritzing diagram above. You can make it neat by soldering the LED and resistor connection but you could also chain them with two of the dupont wires for a solderless build. Hot glue helps to make everything tidy as well.
 - Add the code as specified into your Home Assistant config for binary_sensors.yaml, switches.yaml, and automations.yaml .
 - Restart Home Assistant.
-- Assemble into the stand or wherever you are putting it.
+- Assemble into the stand or wherever you are putting it. You may need to adjust the potentiometer on the backpack board to get the best character display brightness.
 - Enjoy the wealth of information at the wave of your fingertips!
 
 ![](https://github.com/sfgabe/OITProjects/blob/master/NotifyLCD_with_MQTT/20210222_231437.jpg)
