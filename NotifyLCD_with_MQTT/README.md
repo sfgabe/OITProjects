@@ -1,6 +1,6 @@
 # MQTT Notification Board
 
-This is an MQTT notification board for use with Home Assistant (or whatever else). I use it to monitor my aquarium stats from Home Assistant and Reef-Pi. It can be motion activated with a PIR sensor or triggered to display a light if there is an importnt change (error, etc).
+This is an MQTT notification board for use with Home Assistant (or whatever else). I use it to monitor my aquarium stats from Home Assistant and Reef-Pi. It can be motion activated with a PIR sensor or triggered to display a light if there is an important change (error, etc).
 
 ![](https://github.com/sfgabe/OITProjects/blob/master/NotifyLCD_with_MQTT/20210223_142126.jpg)
 ![](https://github.com/sfgabe/OITProjects/blob/master/NotifyLCD_with_MQTT/20210223_142134.jpg)
@@ -11,7 +11,17 @@ This is an MQTT notification board for use with Home Assistant (or whatever else
 - [LED](https://amzn.to/3bKENox)
 - [220 Ohm resistor](https://amzn.to/3r0BGzo)
 - [Mini PIR Sensor](https://amzn.to/2ZV0lJH)
+- [Dupont wires](https://amzn.to/308UmRT)
 - Printed stand (optional), [available on Thingiverse](https://www.thingiverse.com/thing:4329402) and some hot glue to affix sensor and light
 
 ![Fritz Notify Board](https://github.com/sfgabe/OITProjects/blob/master/NotifyLCD_with_MQTT/mqtt-notify-board_bb.png)
 ![](https://github.com/sfgabe/OITProjects/blob/master/NotifyLCD_with_MQTT/20210222_231437.jpg)
+
+**Steps**
+
+- Modify the NotifyLCD.ino file with your MQTT details in Arduino and upload to the NodeMCU
+- Wire up according to the Fritzing diagram above
+- Add the code as specified into your Home Assistant config for binary_sensors.yaml, switches.yaml, and automations.yaml 
+- Restart Home Assistant
+- Assemble into the stand or wherever you are putting it
+- Enjoy the wealth of information at the wave of your fingertips!
