@@ -1,0 +1,25 @@
+# Add this to your switches.yaml file in Home Assistant
+
+- platform: mqtt
+  name: Notify Error
+  command_topic: "notifyscreen/errorlight"
+  state_on: "2"
+  payload_on: "2"
+  state_off: "0"
+  payload_off: "0"
+
+- platform: mqtt
+  name: Clear Screen
+  command_topic: "notifyscreen/backlight"
+  state_on: "0"
+  payload_on: "0"
+  state_off: "9"
+  payload_off: "9"
+
+- platform: mqtt
+  name: Screen On
+  command_topic: "notifyscreen/backlight"
+  state_on: "1"
+  payload_on: "1"
+  state_off: "9"
+  payload_off: "9"
