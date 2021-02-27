@@ -7,7 +7,7 @@ This is an MQTT notification board for use with Home Assistant (or whatever else
 
 **Parts**
 - [NodeMCU](https://amzn.to/3dRN0tK)
-- [2004a LCD with backpack board](https://amzn.to/3dLF3Xc)
+- [2004a LCD with SDA/SCL backpack board](https://amzn.to/3dLF3Xc)
 - [LED](https://amzn.to/3bKENox)
 - [220 Ohm resistor](https://amzn.to/3r0BGzo)
 - [Mini PIR Sensor](https://amzn.to/2ZV0lJH)
