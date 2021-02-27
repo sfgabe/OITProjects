@@ -1,6 +1,10 @@
 # MQTT Notification Board
 
-This is an MQTT notification board for use with Home Assistant. I use it to monitor my aquarium stats from Home Assistant and Reef-Pi. It can be motion activated with a PIR sensor or triggered to display a light if there is an important change (error, etc).
+This is an MQTT notification board for use with Home Assistant. 
+
+It can be motion activated with a PIR sensor or triggered to display a light if there is an important change (error, etc).
+
+I use it to monitor my aquarium stats from Home Assistant and Reef-Pi. 
 
 ![](https://github.com/sfgabe/OITProjects/blob/master/NotifyLCD_with_MQTT/InShot_20210227_024037147.jpg)
 
