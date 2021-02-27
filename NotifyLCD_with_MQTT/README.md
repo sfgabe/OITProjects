@@ -11,7 +11,7 @@ This is an MQTT notification board for use with Home Assistant (or whatever else
 - [LED](https://amzn.to/3bKENox)
 - [220 Ohm resistor](https://amzn.to/3r0BGzo)
 - [Mini PIR Sensor](https://amzn.to/2ZV0lJH)
-- [Dupont wires](https://amzn.to/308UmRT)
+- [Dupont wires](https://amzn.to/3q0LNCQ)
 - Printed stand (optional), [available on Thingiverse](https://www.thingiverse.com/thing:4329402) and some hot glue to affix sensor and light
 
 ![Fritz Notify Board](https://github.com/sfgabe/OITProjects/blob/master/NotifyLCD_with_MQTT/mqtt-notify-board_bb.png)
@@ -19,9 +19,9 @@ This is an MQTT notification board for use with Home Assistant (or whatever else
 
 **Steps**
 
-- Modify the NotifyLCD.ino file with your MQTT details in Arduino and upload to the NodeMCU
-- Wire up according to the Fritzing diagram above
-- Add the code as specified into your Home Assistant config for binary_sensors.yaml, switches.yaml, and automations.yaml 
-- Restart Home Assistant
-- Assemble into the stand or wherever you are putting it
+- Modify the NotifyLCD.ino file with your MQTT details in Arduino and upload to the NodeMCU.
+- Wire up according to the Fritzing diagram above. You can make it neat by soldering the LED and resistor connection but you could also chain them with two of the dupont wires for a solderless build. Hot glue helps to make everything tidy as well.
+- Add the code as specified into your Home Assistant config for binary_sensors.yaml, switches.yaml, and automations.yaml .
+- Restart Home Assistant.
+- Assemble into the stand or wherever you are putting it.
 - Enjoy the wealth of information at the wave of your fingertips!
