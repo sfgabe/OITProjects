@@ -15,7 +15,6 @@ This is an MQTT notification board for use with Home Assistant (or whatever else
 - Printed stand (optional), [available on Thingiverse](https://www.thingiverse.com/thing:4329402) and some hot glue to affix sensor and light
 
 ![Fritz Notify Board](https://github.com/sfgabe/OITProjects/blob/master/NotifyLCD_with_MQTT/mqtt-notify-board_bb.png)
-![](https://github.com/sfgabe/OITProjects/blob/master/NotifyLCD_with_MQTT/20210222_231437.jpg)
 
 **Steps**
 
@@ -25,3 +24,5 @@ This is an MQTT notification board for use with Home Assistant (or whatever else
 - Restart Home Assistant.
 - Assemble into the stand or wherever you are putting it.
 - Enjoy the wealth of information at the wave of your fingertips!
+
+![](https://github.com/sfgabe/OITProjects/blob/master/NotifyLCD_with_MQTT/20210222_231437.jpg)
