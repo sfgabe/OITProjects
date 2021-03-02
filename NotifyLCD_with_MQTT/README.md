@@ -23,7 +23,7 @@ I use it to monitor my aquarium stats from Home Assistant and Reef-Pi.
 
 - Modify the [NotifyLCD.ino](https://github.com/sfgabe/OITProjects/blob/master/NotifyLCD_with_MQTT/NotifyLCD.ino) file with your MQTT details in Arduino and upload to the NodeMCU.
 - Wire up according to the [Fritzing diagram above](https://github.com/sfgabe/OITProjects/blob/master/NotifyLCD_with_MQTT/mqtt-notify-board_bb.png). You can make it neat by soldering the LED and resistor connection but you could also chain them with two of the dupont wires for a solderless build. Hot glue helps to make everything tidy as well.
-- Add the code as specified into your Home Assistant config for [binary_sensors.yaml](https://github.com/sfgabe/OITProjects/blob/master/NotifyLCD_with_MQTT/binary_sensors.yaml), [switches.yaml](https://github.com/sfgabe/OITProjects/blob/master/NotifyLCD_with_MQTT/switches.yaml), and [automations.yaml](https://github.com/sfgabe/OITProjects/blob/master/NotifyLCD_with_MQTT/automations.yaml).
+- Add the code as specified into your Home Assistant config for [binary_sensors.yaml](https://github.com/sfgabe/OITProjects/blob/master/NotifyLCD_with_MQTT/binary_sensor.yaml), [switches.yaml](https://github.com/sfgabe/OITProjects/blob/master/NotifyLCD_with_MQTT/switches.yaml), and [automations.yaml](https://github.com/sfgabe/OITProjects/blob/master/NotifyLCD_with_MQTT/automations.yaml).
 - Restart Home Assistant.
 - Assemble into the stand or wherever you are putting it. You may need to adjust the potentiometer on the backpack board to get the best character display brightness.
 - Enjoy the wealth of information at the wave of your fingertips!
