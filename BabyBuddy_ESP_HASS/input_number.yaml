@@ -1,0 +1,17 @@
+#Baby Buddy Scale
+
+bottle_scale_last_full_value:
+  name: "Bottle Scale Last Full Value"
+  unit_of_measurement: oz
+  min: 0
+  max: 50
+  step: 0.001
+  mode: box
+
+bottle_scale_last_empty_value:
+  name: "Bottle Scale Last Empty Value"
+  unit_of_measurement: oz
+  min: 0
+  max: 50
+  step: 0.001
+  mode: box
