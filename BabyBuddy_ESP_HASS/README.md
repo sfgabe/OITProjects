@@ -2,8 +2,7 @@
 
 I set up [Home Assistant](https://www.home-assistant.io/) to integrate with [BabyBuddy](https://github.com/babybuddy/babybuddy) with the [Baby Buddy Home Assistant Integration](https://github.com/jcgoette/baby_buddy_homeassistant). I wanted a way to measure formula consumption without using the app all the time, so I built a small kitchen scale with [ESPHome](https://esphome.io/) to log the difference between a full and empty bottle.
 
-![Bottlescale Pic 2](https://github.com/sfgabe/OITProjects/blob/master/BabyBuddy_ESP_HASS/20211027_003419.jpg)
-![Bottlescale Pic 1](https://github.com/sfgabe/OITProjects/blob/master/BabyBuddy_ESP_HASS/20211027_003453.jpg)
+<img src="https://github.com/sfgabe/OITProjects/blob/master/BabyBuddy_ESP_HASS/20211027_003419.jpg" data-canonical-src="https://github.com/sfgabe/OITProjects/blob/master/BabyBuddy_ESP_HASS/20211027_003419.jpg" width="296" height="401" />  <img src="https://github.com/sfgabe/OITProjects/blob/master/BabyBuddy_ESP_HASS/20211027_003453.jpg" data-canonical-src="https://github.com/sfgabe/OITProjects/blob/master/BabyBuddy_ESP_HASS/20211027_003453.jpg" width="500" height="401" />
 
 #### How it works: ####
 - While preparing a bottle, put the full bottle on the scale for a few seconds. The white LED will light up when it has read a significant change in weight.
