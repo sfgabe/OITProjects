@@ -2,12 +2,17 @@
 
 I set up [Home Assistant](https://www.home-assistant.io/) to integrate with [BabyBuddy](https://github.com/babybuddy/babybuddy) with the [Baby Buddy Home Assistant Integration](https://github.com/jcgoette/baby_buddy_homeassistant). I wanted a way to measure milk / formula consumption without using the app all the time, so I built a small kitchen scale with [ESPHome](https://esphome.io/) to log the difference between a full and empty bottle.
 
+![Bottlescale Pic 1](https://github.com/sfgabe/OITProjects/blob/master/BabyBuddy_ESP_HASS/20211027_003453.jpg)
+![Bottlescale Pic 2](https://github.com/sfgabe/OITProjects/blob/master/BabyBuddy_ESP_HASS/20211027_003419.jpg)
+
 #### How it works: ####
 - While preparing a bottle, put the full bottle on the scale for a few seconds. The white LED will light up when it has read a significant change in weight.
 - Press the "Full" button to record the weight in Home Assistant. The yellow LED will light for a moment.
 - When baby is done, put the empty bottle on the scale for a few seconds. The white LED will light again.
 - Press the "Empty" button to record the weight in Home Assistant. THe green LED will light for a moment.
 - After a minute, Baby Buddy will record the new feeding, with start and end time, and amount consumed. The time delay in the automation is to prevent multiple recordings as you are juggling bottles and babies.
+
+![Bottlescale screenshot](https://github.com/sfgabe/OITProjects/blob/master/BabyBuddy_ESP_HASS/Screenshot_20211027-003738_Chrome.png)
 
 #### Parts: ####
 - 1 [Digital Load Cell Weight Sensor HX711 AD Converter Breakout Module](https://amzn.to/3mdvzYm)
