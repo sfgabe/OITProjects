@@ -5,8 +5,8 @@ I set up [Home Assistant](https://www.home-assistant.io/) to integrate with [Bab
 Its a simple 8 switch keypad. In my use case its used for 3 different lighting scenes (bright, medium, nightlight) and four baby buddy data points (solid diaper, wet diaper, start sleep, end sleep).
 
 <img src="https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/babybuddy_keypad_1.jpg" data-canonical-src="https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/babybuddy_keypad_1.jpg" width="400" height="371" /> 
-<img src="https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/babybuddy_keypad_3.jpg" data-canonical-src="https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/babybuddy_keypad_3.jpg" width="400" height="400" /> 
 <img src="https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/babybuddy_keypad_2.jpg" data-canonical-src="https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/babybuddy_keypad_2.jpg" width="400" height="400" /> 
+<img src="https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/babybuddy_keypad_3.jpg" data-canonical-src="https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/babybuddy_keypad_3.jpg" width="400" height="400" /> 
 <img src="https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/babybuddy_keypad_4.jpg" data-canonical-src="https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/babybuddy_keypad_4.jpg" width="400" height="279" /> 
 
 #### Parts: ####
