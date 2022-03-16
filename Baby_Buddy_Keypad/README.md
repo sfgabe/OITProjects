@@ -20,6 +20,6 @@ Its a simple 8 switch keypad. In my use case its used for 3 different lighting s
 #### Programming: ####
 - You'll need to be comfortable with [ESPHome](https://esphome.io/) and loading that code onto your Esp8266. The [included ESPHome code](https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/esphome_bottlescale.yaml) should work out of the box with just your wifi information. 
 - Add the [Baby Buddy HA Integration](https://github.com/jcgoette/baby_buddy_homeassistant) if you haven't already. 
-- Add the Home Assistant YAML code to your HA configs. You'll need to add to [sensors.yaml](https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/sensors.yaml), and [automations.yaml](https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/automations.yaml)
+- Add the Home Assistant YAML code to your HA configs. You'll need to add to [automations.yaml](https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/automations.yaml)
 - You'll need to figure out your baby's entity ID number/name from HA for the automations to log correctly, and decide what notes will be helpful, and change the YAML as needed. You can figure this out by making a test service call from the HA developer section and see what the YAML shows you for entity_id
 - Restart Home Assistant and you should be able to log data right away. 
