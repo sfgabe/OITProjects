@@ -1,0 +1,191 @@
+#Keypress for lighting scenes, long press for all off 
+#Button 1
+- alias: 'Bedroom Button 1 Short Press'
+  trigger:
+    - platform: event
+      event_type: esphome.keypad_2x4_b1
+      event_data:
+        title: single_click
+  action:
+    service: script.turn_on
+    entity_id: script.nightlight
+
+- alias: 'Bedroom Button 1 Long Press'
+  trigger:
+    - platform: event
+      event_type: esphome.keypad_2x4_b1
+      event_data:
+        title: long_click
+  action:
+    service: script.turn_on
+    entity_id: script.bedroom_lights_off
+
+#Button 2
+- alias: 'Bedroom Button 2 Short Press'
+  trigger:
+    - platform: event
+      event_type: esphome.keypad_2x4_b2
+      event_data:
+        title: single_click
+  action:
+    service: script.turn_on
+    entity_id: script.bedroom_lights_medium
+
+- alias: 'Bedroom Button 2 Long Press'
+  trigger:
+    - platform: event
+      event_type: esphome.keypad_2x4_b2
+      event_data:
+        title: long_click
+  action:
+    service: script.turn_on
+    entity_id: script.bedroom_lights_off
+
+#Button 3
+- alias: 'Bedroom Button 3 Short Press'
+  trigger:
+    - platform: event
+      event_type: esphome.keypad_2x4_b3
+      event_data:
+        title: single_click
+  action:
+    service: script.turn_on
+    entity_id: script.bedroom_lights_bright
+
+- alias: 'Bedroom Button 3 Long Press'
+  trigger:
+    - platform: event
+      event_type: esphome.keypad_2x4_b3
+      event_data:
+        title: long_click
+  action:
+    service: script.turn_on
+    entity_id: script.bedroom_lights_off
+
+#Keypress for diaper change, long press for BIG diaper change lol
+#Button 5
+- alias: 'Bedroom Button 5 Short Press'
+  trigger:
+    - platform: event
+      event_type: esphome.keypad_2x4_b5
+      event_data:
+        title: single_click
+  action:
+  - service: babybuddy.add_diaper_change
+    data:
+      type: Wet
+      amount: 5
+      notes: From Dresser Button
+#      time: "{{ as_timestamp(now())|timestamp_custom('%H:%M:%S',true) }}"
+    target:
+      entity_id: sensor.my_baby_name
+      device_id: 1234567890_etc_baby_id_number
+
+- alias: 'Bedroom Button 5 Long Press'
+  trigger:
+    - platform: event
+      event_type: esphome.keypad_2x4_b5
+      event_data:
+        title: long_click
+  action:
+  - service: babybuddy.add_diaper_change
+    data:
+      type: Wet
+      amount: 10
+      notes: From Dresser Button
+#      time: "{{ as_timestamp(now())|timestamp_custom('%H:%M:%S',true) }}"
+    target:
+      entity_id: sensor.my_baby_name
+      device_id: 1234567890_etc_baby_id_number
+      
+#Button 6
+- alias: 'Bedroom Button 6 Short Press'
+  trigger:
+    - platform: event
+      event_type: esphome.keypad_2x4_b6
+      event_data:
+        title: single_click
+  action:
+  - service: babybuddy.add_diaper_change
+    data:
+      type: Solid
+      amount: 5
+      notes: From Dresser Button
+#      time: "{{ as_timestamp(now())|timestamp_custom('%H:%M:%S',true) }}"
+    target:
+      entity_id: sensor.my_baby_name
+      device_id: 1234567890_etc_baby_id_number
+
+- alias: 'Bedroom Button 6 Long Press'
+  trigger:
+    - platform: event
+      event_type: esphome.keypad_2x4_b6
+      event_data:
+        title: long_click
+  action:
+  - service: babybuddy.add_diaper_change
+    data:
+      type: Solid
+      amount: 10
+      notes: From Dresser Button
+#      time: "{{ as_timestamp(now())|timestamp_custom('%H:%M:%S',true) }}"
+    target:
+      entity_id: sensor.my_baby_name
+      device_id: 1234567890_etc_baby_id_number
+
+#Keypress for start/end sleep timer
+#Button 7
+- alias: 'Bedroom Button 7 Short Press'
+  trigger:
+    - platform: event
+      event_type: esphome.keypad_2x4_b7
+      event_data:
+        title: single_click
+  action:
+  - service: babybuddy.start_timer
+    data:
+      name: Nap Timer
+    target:
+      entity_id: switch.my_baby_name_timer
+
+- alias: 'Bedroom Button 7 Long Press'
+  trigger:
+    - platform: event
+      event_type: esphome.keypad_2x4_b7
+      event_data:
+        title: long_click
+  action:
+  - service: babybuddy.start_timer
+    data:
+      name: Sleep Timer
+    target:
+      entity_id: switch.my_baby_name_timer
+
+#Button 8
+- alias: 'Bedroom Button 8 Short Press'
+  trigger:
+    - platform: event
+      event_type: esphome.keypad_2x4_b8
+      event_data:
+        title: single_click
+  action:
+  - service: babybuddy.add_sleep
+    data:
+      timer: true
+      notes: From Dresser Button
+    target:
+      entity_id: switch.my_baby_name_timer
+
+- alias: 'Bedroom Button 8 Long Press'
+  trigger:
+    - platform: event
+      event_type: esphome.keypad_2x4_b8
+      event_data:
+        title: long_click
+  action:
+  - service: babybuddy.add_sleep
+    data:
+      timer: true
+      notes: From Dresser Button
+    target:
+      entity_id: switch.my_baby_name_timer
