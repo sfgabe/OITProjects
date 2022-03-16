@@ -1,4 +1,6 @@
-#This includes options for single press, double press, long press, and click and hold - for the baby buddy integration I am only using single and long press, you can add other options on the Home Assistant side through automations.
+# This includes options for single press, double press, long press, and click and hold.
+# For the baby buddy integration I am only using single and long press
+# You can add other options on the Home Assistant side through automations
 
 esphome:
   name: baby_buddy_keypad_2x4
