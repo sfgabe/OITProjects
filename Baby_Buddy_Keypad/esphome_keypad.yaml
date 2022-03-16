@@ -1,0 +1,411 @@
+#This includes options for single press, double press, long press, and click and hold - for the baby buddy integration I am only using single and long press, you can add other options on the Home Assistant side through automations.
+
+esphome:
+  name: baby_buddy_keypad_2x4
+  platform: ESP8266
+  board: nodemcuv2
+
+binary_sensor:
+#Key 1
+  - platform: gpio
+    icon: "mdi:dialpad"
+    name: "Keypad 2x4 Button 1"
+    pin:
+      number: D2
+      inverted: true
+      mode: INPUT_PULLUP
+    on_multi_click:
+    - timing:
+      - ON for at most 1s
+      - OFF for at most 1s
+      - ON for at most 1s
+      - OFF for at least 0.2s
+      then:
+        - logger.log: "Double Clicked"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b1
+            data:
+              title: dbl_click
+    - timing:
+      - ON for 1s to 2s
+      - OFF for at least 0.5s
+      then:
+        - logger.log: "Single Long Clicked"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b1
+            data:
+              title: long_click
+    - timing:
+      - ON for at least 2.2s
+      then:
+        - logger.log: "Click and Hold"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b1
+            data:
+              title: hold
+    - timing:
+      - ON for at most 1s
+      - OFF for at least 0.5s
+      then:
+        - logger.log: "Single Short Clicked"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b1
+            data:
+              title: single_click
+
+#Key 2
+  - platform: gpio
+    icon: "mdi:dialpad"
+    name: "Keypad 2x4 Button 2"
+    pin:
+      number: D4
+      inverted: true
+      mode: INPUT_PULLUP
+    on_multi_click:
+    - timing:
+      - ON for at most 1s
+      - OFF for at most 1s
+      - ON for at most 1s
+      - OFF for at least 0.2s
+      then:
+        - logger.log: "Double Clicked"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b2
+            data:
+              title: dbl_click
+    - timing:
+      - ON for 1s to 2s
+      - OFF for at least 0.5s
+      then:
+        - logger.log: "Single Long Clicked"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b2
+            data:
+              title: long_click
+    - timing:
+      - ON for at least 2.2s
+      then:
+        - logger.log: "Click and Hold"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b2
+            data:
+              title: hold
+    - timing:
+      - ON for at most 1s
+      - OFF for at least 0.5s
+      then:
+        - logger.log: "Single Short Clicked"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b2
+            data:
+              title: single_click
+
+#Key 3
+  - platform: gpio
+    icon: "mdi:dialpad"
+    name: "Keypad 2x4 Button 3"
+    pin:
+      number: D6
+      inverted: true
+      mode: INPUT_PULLUP
+    on_multi_click:
+    - timing:
+      - ON for at most 1s
+      - OFF for at most 1s
+      - ON for at most 1s
+      - OFF for at least 0.2s
+      then:
+        - logger.log: "Double Clicked"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b3
+            data:
+              title: dbl_click
+    - timing:
+      - ON for 1s to 2s
+      - OFF for at least 0.5s
+      then:
+        - logger.log: "Single Long Clicked"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b3
+            data:
+              title: long_click
+    - timing:
+      - ON for at least 2.2s
+      then:
+        - logger.log: "Click and Hold"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b3
+            data:
+              title: hold
+    - timing:
+      - ON for at most 1s
+      - OFF for at least 0.5s
+      then:
+        - logger.log: "Single Short Clicked"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b3
+            data:
+              title: single_click
+
+#Key 4
+  - platform: gpio
+    icon: "mdi:dialpad"
+    name: "Keypad 2x4 Button 4"
+    pin:
+      number: D8
+      inverted: true
+      mode: INPUT_PULLUP
+    on_multi_click:
+    - timing:
+      - ON for at most 1s
+      - OFF for at most 1s
+      - ON for at most 1s
+      - OFF for at least 0.2s
+      then:
+        - logger.log: "Double Clicked"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b4
+            data:
+              title: dbl_click
+    - timing:
+      - ON for 1s to 2s
+      - OFF for at least 0.5s
+      then:
+        - logger.log: "Single Long Clicked"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b4
+            data:
+              title: long_click
+    - timing:
+      - ON for at least 2.2s
+      then:
+        - logger.log: "Click and Hold"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b4
+            data:
+              title: hold
+    - timing:
+      - ON for at most 1s
+      - OFF for at least 0.5s
+      then:
+        - logger.log: "Single Short Clicked"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b4
+            data:
+              title: single_click
+
+#Key 5
+  - platform: gpio
+    icon: "mdi:dialpad"
+    name: "Keypad 2x4 Button 5"
+    pin:
+      number: D1
+      inverted: true
+      mode: INPUT_PULLUP
+    on_multi_click:
+    - timing:
+      - ON for at most 1s
+      - OFF for at most 1s
+      - ON for at most 1s
+      - OFF for at least 0.2s
+      then:
+        - logger.log: "Double Clicked"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b5
+            data:
+              title: dbl_click
+    - timing:
+      - ON for 1s to 2s
+      - OFF for at least 0.5s
+      then:
+        - logger.log: "Single Long Clicked"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b5
+            data:
+              title: long_click
+    - timing:
+      - ON for at least 2.2s
+      then:
+        - logger.log: "Click and Hold"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b5
+            data:
+              title: hold
+    - timing:
+      - ON for at most 1s
+      - OFF for at least 0.5s
+      then:
+        - logger.log: "Single Short Clicked"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b5
+            data:
+              title: single_click
+
+#Key 6
+  - platform: gpio
+    icon: "mdi:dialpad"
+    name: "Keypad 2x4 Button 6"
+    pin:
+      number: D3
+      inverted: true
+      mode: INPUT_PULLUP
+    on_multi_click:
+    - timing:
+      - ON for at most 1s
+      - OFF for at most 1s
+      - ON for at most 1s
+      - OFF for at least 0.2s
+      then:
+        - logger.log: "Double Clicked"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b6
+            data:
+              title: dbl_click
+    - timing:
+      - ON for 1s to 2s
+      - OFF for at least 0.5s
+      then:
+        - logger.log: "Single Long Clicked"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b6
+            data:
+              title: long_click
+    - timing:
+      - ON for at least 2.2s
+      then:
+        - logger.log: "Click and Hold"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b6
+            data:
+              title: hold
+    - timing:
+      - ON for at most 1s
+      - OFF for at least 0.5s
+      then:
+        - logger.log: "Single Short Clicked"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b6
+            data:
+              title: single_click
+
+#Key 7
+  - platform: gpio
+    icon: "mdi:dialpad"
+    name: "Keypad 2x4 Button 7"
+    pin:
+      number: D5
+      inverted: true
+      mode: INPUT_PULLUP
+    on_multi_click:
+    - timing:
+      - ON for at most 1s
+      - OFF for at most 1s
+      - ON for at most 1s
+      - OFF for at least 0.2s
+      then:
+        - logger.log: "Double Clicked"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b7
+            data:
+              title: dbl_click
+    - timing:
+      - ON for 1s to 2s
+      - OFF for at least 0.5s
+      then:
+        - logger.log: "Single Long Clicked"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b7
+            data:
+              title: long_click
+    - timing:
+      - ON for at least 2.2s
+      then:
+        - logger.log: "Click and Hold"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b7
+            data:
+              title: hold
+    - timing:
+      - ON for at most 1s
+      - OFF for at least 0.5s
+      then:
+        - logger.log: "Single Short Clicked"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b7
+            data:
+              title: single_click
+
+#Key 8
+  - platform: gpio
+    icon: "mdi:dialpad"
+    name: "Keypad 2x4 Button 8"
+    pin:
+      number: D7
+      inverted: true
+      mode: INPUT_PULLUP
+    on_multi_click:
+    - timing:
+      - ON for at most 1s
+      - OFF for at most 1s
+      - ON for at most 1s
+      - OFF for at least 0.2s
+      then:
+        - logger.log: "Double Clicked"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b8
+            data:
+              title: dbl_click
+    - timing:
+      - ON for 1s to 2s
+      - OFF for at least 0.5s
+      then:
+        - logger.log: "Single Long Clicked"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b8
+            data:
+              title: long_click
+    - timing:
+      - ON for at least 2.2s
+      then:
+        - logger.log: "Click and Hold"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b8
+            data:
+              title: hold
+    - timing:
+      - ON for at most 1s
+      - OFF for at least 0.5s
+      then:
+        - logger.log: "Single Short Clicked"
+        - homeassistant.event:
+            event: esphome.keypad_2x4_b8
+            data:
+              title: single_click
+
+#turn off status light
+status_led:
+  pin:
+    number: D4
+#    inverted: true
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: ""
+
+ota:
+  password: ""
+
+wifi:
+  ssid: "YOUR_WIFI_ID"
+  password: "YOUR_WIFI_PASSWORD"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Keypad 2x4 Fallback Hotspot"
+    password: "letters_and_numbers"
+
+captive_portal:
+
