@@ -1,6 +1,8 @@
 ## Quick Entry Keypad for BabyBuddy and Home Assistant with ESPHome ##
  
-I set up [Home Assistant](https://www.home-assistant.io/) to integrate with [BabyBuddy](https://github.com/babybuddy/babybuddy) with the [Baby Buddy Home Assistant Integration](https://github.com/jcgoette/baby_buddy_homeassistant). I made a quick little keypad for adding data to baby buddy through a NodeMCU with [ESPHome](https://esphome.io/).
+I set up [Home Assistant](https://www.home-assistant.io/) to integrate with [BabyBuddy](https://github.com/babybuddy/babybuddy) with the [Baby Buddy Home Assistant Integration](https://github.com/jcgoette/baby_buddy_homeassistant). I made a quick little keypad for adding data to baby buddy through a NodeMCU with [ESPHome](https://esphome.io/). 
+
+([see the BabyBuddy Bottle Scale integration here] (https://github.com/sfgabe/OITProjects/tree/master/BabyBuddy_ESP_HASS)) 
 
 Its a simple 8 switch keypad. In my use case its used for 3 different lighting scenes (bright, medium, nightlight) and four baby buddy data points (solid diaper, wet diaper, start sleep, end sleep).
 
