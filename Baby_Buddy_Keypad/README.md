@@ -18,7 +18,7 @@ Its a simple 8 switch keypad. In my use case its used for 3 different lighting s
  
 #### Assembly: ####
 
-![Keypad Fritzing](https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/babybuddy_fritz.png)
+![Keypad Fritzing](https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/babybuddy_keypad_fritz.png)
 
 #### Programming: ####
 - You'll need to be comfortable with [ESPHome](https://esphome.io/) and loading that code onto your Esp8266. The [included ESPHome code](https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/esphome_keypad.yaml) should work out of the box with just your wifi information. 
