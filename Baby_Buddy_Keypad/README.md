@@ -7,7 +7,7 @@ Its a simple 8 switch keypad. In my use case its used for 3 different lighting s
 <img src="https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/babybuddy_keypad_1.jpg" data-canonical-src="https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/babybuddy_keypad_1.jpg" width="400" height="371" /> 
 <img src="https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/babybuddy_keypad_2.jpg" data-canonical-src="https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/babybuddy_keypad_2.jpg" width="400" height="400" /> 
 <img src="https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/babybuddy_keypad_3.jpg" data-canonical-src="https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/babybuddy_keypad_3.jpg" width="400" height="400" /> 
-<img src="https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/babybuddy_keypad_4.jpg" data-canonical-src="https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/babybuddy_keypad_4.jpg" width="400" height="279" /> 
+<img src="https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/babybuddy_keypad_5.jpg" data-canonical-src="https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/babybuddy_keypad_5.jpg" width="400" height="320" /> 
 
 #### Parts: ####
 - 8 [Key Switches](https://amzn.to/3i8RcX6)
@@ -18,7 +18,7 @@ Its a simple 8 switch keypad. In my use case its used for 3 different lighting s
  
 #### Assembly: ####
 
-![Keypad Fritzing](https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/keypad-esphome.png)
+![Keypad Fritzing](https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/babybuddy_fritz.png)
 
 #### Programming: ####
 - You'll need to be comfortable with [ESPHome](https://esphome.io/) and loading that code onto your Esp8266. The [included ESPHome code](https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/esphome_keypad.yaml) should work out of the box with just your wifi information. 
