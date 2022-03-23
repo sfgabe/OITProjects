@@ -18,8 +18,6 @@ Its a simple 8 switch keypad. In my use case its used for 3 different lighting s
  
 #### Assembly: ####
 
-![Keypad Fritzing](https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/babybuddy_keypad_fritz.png)
-
 <img src="https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/babybuddy_keypad_fritz.png" data-canonical-src="https://github.com/sfgabe/OITProjects/blob/master/Baby_Buddy_Keypad/babybuddy_keypad_fritz.png" width="385" height="400" /> 
 
 #### Programming: ####
