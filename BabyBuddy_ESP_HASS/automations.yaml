@@ -38,7 +38,7 @@
     data:
       type: Formula
       method: Bottle
-      amount: "{{ states('sensor.bottle_scale_consumed') }}"
+      amount: '{{ states(''sensor.bottle_scale_consumed'') | float }}'
       notes: From Bottle Scale
       start: "{{ as_timestamp(state_attr('automation.bottle_scale_full_button_press', 'last_triggered'))|timestamp_custom('%H:%M:%S',true) }}"
       end: "{{ as_timestamp(now())|timestamp_custom('%H:%M:%S',true) }}"
