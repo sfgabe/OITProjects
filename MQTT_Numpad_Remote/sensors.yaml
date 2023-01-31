@@ -1,4 +1,0 @@
-- platform: mqtt
-  state_topic: "numpad/reading/current"
-  name: NumPad All
-  value_template: "{{ value }}"

@@ -1,8 +1,0 @@
-#Baby Buddy Scale
-
-- platform: template
-  sensors:
-    bottle_scale_consumed:
-      value_template: "{{ ((float(states('input_number.bottle_scale_last_full_value'))) - (float(states('input_number.bottle_scale_last_empty_value')))) }}"
-      unit_of_measurement: oz
-      friendly_name: 'Bottle Scale Consumed'
