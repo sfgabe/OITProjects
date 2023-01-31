@@ -1,0 +1,123 @@
+## Start timer named "Sleep Timer" 
+alias: Baby Sleep Timer
+description: ""
+trigger:
+  - platform: event
+    event_type: esphome.keypad_2x4_b3
+    event_data:
+      title: single_click
+condition: []
+action:
+  - service: babybuddy.start_timer
+    data:
+      name: Sleep Timer
+    target:
+      entity_id: switch.ian_suruceanu_timer
+  - device_id: bf4bee2885341428dfc1eb0900dd52e2
+    domain: light
+    entity_id: light.keypad_white_led
+    type: flash
+mode: single
+
+## Add Sleep From exixting timer
+alias: Baby Add sleep from timer
+description: ""
+trigger:
+  - platform: event
+    event_type: esphome.keypad_2x4_b4
+    event_data:
+      title: single_click
+condition: []
+action:
+  - service: babybuddy.add_sleep
+    data:
+      timer: true
+    target:
+      entity_id: switch.ian_suruceanu_timer
+  - device_id: bf4bee2885341428dfc1eb0900dd52e2
+    domain: light
+    entity_id: light.keypad_white_led
+    type: flash
+mode: single
+
+## Add a Solid Diper change
+alias: Baby Solid Diaper change
+description: ""
+trigger:
+  - platform: event
+    event_type: esphome.keypad_2x4_b2
+    event_data:
+      title: single_click
+condition: []
+action:
+  - service: babybuddy.add_diaper_change
+    data:
+      type: Solid
+      notes: From Keypad
+    target:
+      entity_id: sensor.baby_ian_suruceanu
+  - device_id: bf4bee2885341428dfc1eb0900dd52e2
+    domain: light
+    entity_id: light.keypad_white_led
+    type: flash
+mode: single
+
+## Add a Wet and Solid Diper change
+alias: Baby Wet and Solid Diaper change
+description: ""
+trigger:
+  - platform: event
+    event_type: esphome.keypad_2x4_b5
+    event_data:
+      title: single_click
+condition: []
+action:
+  - service: babybuddy.add_diaper_change
+    data:
+      type: Wet and Solid
+      notes: From Keypad
+    target:
+      entity_id: sensor.baby_ian_suruceanu
+  - device_id: bf4bee2885341428dfc1eb0900dd52e2
+    domain: light
+    entity_id: light.keypad_white_led
+    type: flash
+mode: single
+
+## Add a Wet Diper change
+alias: Baby Wet Diaper change
+description: ""
+trigger:
+  - platform: event
+    event_type: esphome.keypad_2x4_b1
+    event_data:
+      title: single_click
+condition: []
+action:
+  - service: babybuddy.add_diaper_change
+    data:
+      type: Wet
+      notes: From Keypad
+    target:
+      entity_id: sensor.baby_ian_suruceanu
+  - device_id: bf4bee2885341428dfc1eb0900dd52e2
+    domain: light
+    entity_id: light.keypad_white_led
+    type: flash
+mode: single
+
+## Toggle Light at Changing station
+alias: Baby Change Station Light
+description: ""
+trigger:
+  - platform: event
+    event_type: esphome.keypad_2x4_b8
+    event_data:
+      title: single_click
+condition: []
+action:
+  - type: toggle
+    device_id: 7ef87f6924c797e75020341fe1d2b21c
+    entity_id: switch.brown_lamp
+    domain: switch
+mode: single
