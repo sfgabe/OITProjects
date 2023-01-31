@@ -12,7 +12,7 @@ action:
     data:
       name: Sleep Timer
     target:
-      entity_id: switch.ian_suruceanu_timer
+      entity_id: switch.{baby-name}_timer
   - device_id: bf4bee2885341428dfc1eb0900dd52e2
     domain: light
     entity_id: light.keypad_white_led
@@ -33,7 +33,7 @@ action:
     data:
       timer: true
     target:
-      entity_id: switch.ian_suruceanu_timer
+      entity_id: switch.{baby-name}_timer
   - device_id: bf4bee2885341428dfc1eb0900dd52e2
     domain: light
     entity_id: light.keypad_white_led
@@ -55,7 +55,7 @@ action:
       type: Solid
       notes: From Keypad
     target:
-      entity_id: sensor.baby_ian_suruceanu
+      entity_id: sensor.baby_{baby-name}
   - device_id: bf4bee2885341428dfc1eb0900dd52e2
     domain: light
     entity_id: light.keypad_white_led
@@ -77,7 +77,7 @@ action:
       type: Wet and Solid
       notes: From Keypad
     target:
-      entity_id: sensor.baby_ian_suruceanu
+      entity_id: sensor.baby_{baby-name}
   - device_id: bf4bee2885341428dfc1eb0900dd52e2
     domain: light
     entity_id: light.keypad_white_led
@@ -99,7 +99,7 @@ action:
       type: Wet
       notes: From Keypad
     target:
-      entity_id: sensor.baby_ian_suruceanu
+      entity_id: sensor.baby_{baby-name}
   - device_id: bf4bee2885341428dfc1eb0900dd52e2
     domain: light
     entity_id: light.keypad_white_led
